@@ -1,0 +1,150 @@
+//* Variable arguments for functions/mixins *//
+@mixin config-button-bgcolors($prefix, $colors...) {
+  @each $i in $colors {
+    .#{$prefix}#{nth($i, 1)} {
+      background-color: nth($i, 2);
+      color: nth($i, 3);
+      border: none;
+    }
+  }
+}
+
+//* Variable arguments for functions/mixins *//
+@mixin config-justify-content($prefix, $position...) {
+  @each $i in $position {
+    .#{$prefix}#{nth($i, 1)} {
+      display: flex;
+      -webkit-box-pack: nth($i, 2) !important;
+      -ms-flex-pack: nth($i, 2) !important;
+      justify-content: nth($i, 2) !important;
+    }
+  }
+}
+
+//* Variable arguments for functions/mixins *//
+@mixin config-label-colors($prefix, $colors...) {
+  @each $i in $colors {
+    .#{$prefix}#{nth($i, 1)} {
+      background-color: nth($i, 2);
+      border: none;
+    }
+  }
+}
+
+//* Variable arguments for functions/mixins *//
+@mixin config-text-colors($prefix, $colors...) {
+  @each $i in $colors {
+    .#{$prefix}#{nth($i, 1)} {
+      color: nth($i, 2) !important;
+    }
+  }
+}
+
+//* Variable arguments for functions/mixins *//
+@mixin config-bg-colors($prefix, $colors...) {
+  @each $i in $colors {
+    .#{$prefix}#{nth($i, 1)} {
+      background-color: nth($i, 2) !important;
+    }
+  }
+}
+
+//* box shadows *//
+@mixin box-shadow($shadows...) {
+  -o-box-shadow: $shadows;
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+
+//* transform *//
+@mixin transform($set...) {
+  -moz-transform: $set;
+  -webkit-transform: $set;
+  -o-transform: $set;
+  -ms-transform: $set;
+  transform: $set;
+}
+
+//* transitions *//
+@mixin transition($set...) {
+  -webkit-transition: $set;
+  -moz-transition: $set;
+  -ms-transition: $set;
+  -o-transition: $set;
+  transition: $set;
+}
+
+//* text shadows *//
+@mixin text-shadow($shadows...) {
+  text-shadow: $shadows;
+}
+
+//* colors *//
+@mixin colors($text, $background, $border) {
+  color: $text;
+  background-color: $background;
+  border-color: $border;
+}
+
+//* scrollbar *//
+@mixin scrollbar($to) {
+  .#{$to}::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: $white3;
+  }
+  .#{$to}::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: $grey3;
+  }
+  .#{$to}::-webkit-scrollbar-thumb {
+    background-color: $white;
+    background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#4D9C41), to(#19911D), color-stop(.6, #54DE5D))
+  }
+}
+
+//* custom values for custom classes *//
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+$position: (sticky, fixed, relative, absolute); // custom positions values
+
+@each $space in $spaceamounts { //running loop to generate classes against pixels
+  @each $side in $sides { //running loop to generate classes against pixels and sides
+
+    //custom margins against sides
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    //custom paddings against sides
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+
+  //custom margin to all sides in rem
+  .cust-mar-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  //custom padding to all sides in rem
+  .cust-pad-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  //custom height class in vh
+  .cust-h-#{$space} { //running loop to generate classes against pixels
+    height: #{$space}vh;
+  }
+
+  //custom index class
+  .cust-index-#{$space} { //running loop to generate classes against pixels
+    z-index: #{$space} !important;
+  }
+}
+
+@each $pos in $position {
+  .cust-pos-#{$pos} { //creating custom position classes
+    position: #{$pos} !important;
+  }
+}

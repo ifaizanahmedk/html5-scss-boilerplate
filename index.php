@@ -17,7 +17,6 @@
 
    <!--=== All Plugins CSS ===-->
    <link rel="stylesheet" type="text/css" href="resources/plugin/css/bootstrap.min.css">
-   <link rel="stylesheet" type="text/css" href="resources/plugin/css/swiper.min.css">
 
    <!--=== CUSTOM STYLES-->
    <link rel="stylesheet" type="text/css" href="resources/custom/css/custom.css">
@@ -81,7 +80,6 @@
 
 <script rel="script" type="text/javascript" src="resources/plugin/js/jquery.min.js"></script>
 <script rel="script" type="text/javascript" src="resources/plugin/js/bootstrap.min.js"></script>
-<script rel="script" type="text/javascript" src="resources/plugin/js/swiper.min.js"></script>
 <script rel="script" type="text/javascript" src="resources/custom/js/main.js"></script>
 </body>
 </html>

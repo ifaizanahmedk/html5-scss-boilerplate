@@ -1,0 +1,55 @@
+/*********************************************************/
+/* 
+/* NOTE:
+/* Use pagination in HTML in ul, li format
+/*
+/*********************************************************/
+.pagination {
+    &--section {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 50;
+        padding: 0;
+        margin: 0;
+    }
+    &--list {
+        position: absolute;
+        list-style: none;
+        right: 0;
+        top: auto;
+        bottom: auto;
+        margin: auto;
+        left: auto;
+        height: auto;
+        @include display-flex();
+        @include flex-dir(column);
+        flex-wrap: wrap;
+        @include flex-align(flex-end);
+        @include flex-jus(center);
+        z-index: 50;
+        @include transform(translateY(40vh));
+    }
+    &--item {
+        display: block;
+        padding: px-to-rem(6) 0;
+        margin: px-to-rem(4) 0;
+        cursor: pointer;
+
+        &--link {
+            content: "";
+            width: px-to-rem(23);
+            height: px-to-rem(3);
+            background-color: $theme__color--dark;
+            opacity: 1;
+            display: block;
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        &-active &--link {
+            width: px-to-rem(45);
+            height: px-to-rem(5);
+        }
+    }
+}

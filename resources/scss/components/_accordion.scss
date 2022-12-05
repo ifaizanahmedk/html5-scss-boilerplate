@@ -1,0 +1,44 @@
+/*  =====================================
+    Custom Accordian Card Configuration
+=====================================   */
+.accordion {
+    .card-header {
+        padding: 0.75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: $theme__color--dark4;
+        border-bottom: none;
+        color: $theme__color--light;
+    }
+
+    .btn:focus {
+        @include box-shadow(none);
+    }
+
+    .card {
+        border: none;
+
+        [class*="btn-"] {
+            border: none;
+            white-space: normal;
+            text-align: left;
+            width: 100%;
+            font-family: "CircularStd-Book", sans-serif;
+            line-height: 1.3;
+            letter-spacing: 0.8px;
+            padding: 0.6rem 1rem;
+
+            &:hover {
+                @include box-shadow(none);
+                background-color: transparent;
+                color: $theme__color--core;
+                border: none;
+            }
+        }
+    }
+
+    .card-body {
+        background-color: $theme__color--dark4;
+        padding: 1rem 1.25rem;
+    }
+}
+//Custom Accordian Card Configuration Ends

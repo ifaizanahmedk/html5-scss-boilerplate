@@ -1,0 +1,57 @@
+/*  =====================================
+    Dropdown Configuration
+=====================================   */
+.dropdown-item {
+    padding: 0;
+    font-size: px-to-rem(14);
+    line-height: 1.6;
+    color: $dark__d3;
+    font-family: $theme__font--primary;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0.2px;
+    line-height: px-to-rem(24);
+    display: block;
+    max-width: max-content;
+
+    @media screen and (min-width: $laptop) {
+        @include font-size(18);
+    }
+
+    i {
+        line-height: inherit;
+    }
+}
+.dropdown-item:hover,
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.dropdown-menu {
+    min-width: px-to-rem(240);
+    background-color: $white;
+    border: 2px solid $theme__color--berry;
+    border-radius: 5px;
+    position: absolute;
+    top: 40px;
+    padding: 20px;
+    text-align: left;
+    max-width: px-to-rem(300);
+    display: none;
+    box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
+
+    i {
+        color: $theme__color--berry;
+        position: absolute;
+        top: -12px;
+        left: 12px;
+        background-color: $white;
+    }
+}
+
+.show {
+    display: block;
+}
+//Dropdown Configuration Ends

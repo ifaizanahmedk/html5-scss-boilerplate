@@ -1,0 +1,24 @@
+/*  =====================================
+    Background Configuration
+=====================================   */
+@include config-bg-colors(
+    "bg-",
+    "white" $theme__color--light,
+    "black" $theme__color--dark,
+    "white4" $theme__color--light4,
+    "transparent" transparent,
+    "blue" $blue,
+    "liBlue" $lightBlue,
+    "green" $turtleGreen,
+    "purple" $purple,
+    "voilet" $voilet,
+    "orange" $orange,
+    "yellow" $yellow,
+    "yellow2" $yellow2,
+    "grape" $grapePurple,
+    "melon" $melon,
+    "paleGrey" $paleGrey,
+    "azure" $azure
+);
+
+//Background Configuration Ends

@@ -1,0 +1,82 @@
+/** Theme Root Px Value */
+$rootVal: 16;
+
+/** Theme Colors */
+$white: #fff;
+$black: #000;
+$paleGrey: #f2efe8;
+$grey: #cccccc;
+$grey2: #444650;
+$grey3: #737373;
+$lightGrey: #9f9f9f;
+$blue: #0f5dc0;
+$lightBlue: #00aad2;
+$lightestBlue: #f9f9f9;
+$azure: #0078ff;
+$red: red;
+$red2: #e53935;
+$peach: #f03a1f;
+$peachRed: #f94444;
+$melon: #fe735e;
+$grapePurple: #892331;
+$grapeRed: #9c1c1d;
+$purple: #3f51b5;
+$lightPurple: #726ec7;
+$voilet: #9f1ecc;
+$pink: #f1536e;
+$sea-green: #20c5da;
+$sea-green2: #c7dffc;
+$darkGreen: #244b00;
+$green: #19AC2C;
+$green2: #A5BE3F;
+$turtleGreen: #61b548;
+$lightGreen: #84e19a;
+$orange: #fc4d1a;
+$yellow: #f9b61c;
+$yellow2: #f3b52a;
+$mustard: #ffc52c;
+$grey-calendar: #e6e7e8;
+
+/** Theme Colors Pallete */
+$theme__color--light: $white;
+$theme__color--light2: #E5E5E5;
+$theme__color--light3: #e2e2e2;
+$theme__color--light4: #f5f5f5;
+$theme__color--light5: #fafaff;
+
+$theme__color--dark: $black;
+$theme__color--dark2: #333333;
+$theme__color--dark3: #474747;
+$theme__color--dark4: #262626;
+$theme__color--dark5: #252B42;
+
+/** Theme Main Variables */
+$theme__color--berry: #7494E5;
+$theme__color--leaf: #BCD58A;
+
+/** Theme Secondary Variables */
+$theme__color--core: #122F49;
+$theme__color--sunDark: #F78465;
+$theme__color--sunDark3: #F5A690;
+$theme__color--sunDark2: #F3DDD7;
+$theme__color--sunLight: #FDC051;
+$theme__color--sunLight1: #FFD78D;
+$theme__color--bark: #E3C5B0;
+$theme__color--skyDim: #B0C1D5;
+$theme__color--skyLight: #C1E1F8;
+
+/** Others */
+$light__l1: #ECF8F8;
+$dark__d1: #161C32;
+$dark__d2: #2E3440;
+$dark__d3: #47586C;
+
+$bg__gray: #ADB5BD;
+$bg__lightGray: #E5E6E4;
+
+$action__green: #4BC65F;
+$actions__red: #EC4D4D;
+
+/** Theme Fonts */
+$theme__font--primary: "Manrope", "Helvetica", "Arial", sans-serif;
+$theme__font--secondary: "Inter", "Helvetica", "Arial", sans-serif;

@@ -9,8 +9,8 @@
 	line-height: 1.5;
 	font-weight: 600;
 	color: $theme__color--light;
-	font-family: $theme__font--secondary;
-	background-color: $theme__color--berry;
+	font-family: $theme__primary-font--poppins;
+	background-color: $theme__primary-color--green-base;
 	border: 1px solid;
 	float: none;
 	-webkit-border-radius: 5px;
@@ -39,7 +39,7 @@
 		outline: none;
 		outline-color: transparent;
 		box-shadow: none;
-		background-color: $theme__color--core;
+		background-color: $theme__primary-color--green-highlighted;
 		color: $white;
 	}
 
@@ -53,15 +53,15 @@
 
 [class*="btn-secondary"] {
 	background-color: transparent;
-	border: 1px solid $theme__color--core;
-	color: $theme__color--core;
+	border: 1px solid $theme__primary-color--green-highlighted;
+	color: $theme__primary-color--green-highlighted;
 
 	&:hover {
 		outline: none;
 		outline-color: transparent;
 		box-shadow: none;
-		background-color: $theme__color--core;
-		color: $theme__color__light;
+		background-color: $theme__primary-color--green-highlighted;
+		color: $theme__color--light;
 	}
 }
 
@@ -73,7 +73,7 @@
 	margin: 6.35rem auto 0;
 	display: table;
 	border: 1px solid $theme__color--dark;
-	font-family: $theme__font--secondary;
+	font-family: $theme__primary-font--poppins;
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 0.8px;
@@ -105,14 +105,14 @@
 [class*="btn-tertiary"] {
 	background-color: transparent;
 	border: 0;
-	color: $theme__color--core;
+	color: $theme__primary-color--green-highlighted;
 
 	&:hover {
 		outline: none;
 		outline-color: transparent;
 		box-shadow: none;
 		background-color: transparent;
-		color: $theme__color--sunDark;
+		color: $theme__primary-color--green-base;
 	}
 }
 

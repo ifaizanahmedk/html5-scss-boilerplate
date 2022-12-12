@@ -1,0 +1,302 @@
+/* lg */
+@media (min-width: 1500px) {
+  .card-default .table-responsive.scroll {
+    max-height: 480px;
+  }
+
+  .table tr td div.trimText {
+    width: 90%;
+  }
+}
+@media (min-width: 992px){
+  .modal-large{
+      max-width: 960px;
+  }
+}
+@media (max-width: 1500px) {
+  .table-responsive.scroll {
+    max-height: 350px;
+  }
+
+  .tbl-scheduler-calendar.scroll {
+    max-height: 530px;
+  }
+
+  .assigned-practices .assigned-prac-input {
+    width: 160px;
+  }
+
+  /* for responsive by asghar */
+
+  /* md */
+}
+
+@media (max-width: 1360px) {
+  .general-heading-icons {
+    position: inherit;
+  }
+}
+
+@media (max-width:1199px) {
+  .dash-box-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .dash-box .counter {
+    font-size: 18px;
+  }
+
+  .dash-box .title {
+    font-size: 14px;
+  }
+
+  span.counter-status {
+    padding: 0 5px;
+    line-height: 18px;
+    top: 8px;
+    right: 8px;
+  }
+
+  #Patient1 .pv-body {
+    min-height: inherit;
+  }
+
+  .labOrderSearch {
+    width: 150px;
+  }
+}
+
+@media (max-width:1040px) {
+  .labOrderSearch {
+    width: 135px;
+  }
+}
+
+@media (max-width:991px) {
+  .labOrderSearch {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #PatientList .heading-buttons {
+    text-align: left;
+  }
+  .modal-lg, .modal-xl {
+    max-width: 90%;
+  }
+  .col-sm-6 .DiagnosisDes {
+    width: 37%;
+  }
+}
+
+@media (min-width: 1198px) and (max-width: 1500px) {
+  .custom-pl-4 {
+    padding-left: 10% !important;
+  }
+}
+
+@media (min-width: 1350px) and (max-width: 2100px) {
+  .modal-xl {
+    min-width: 85% !important;
+  }
+  .custom-modal .modal-xl {
+    min-width: 100% !important;
+  }
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+  .other-summary-info .col-lg-4 {
+    margin-bottom: 5px;
+  }
+	label {
+		font-size: var(--smallfont);
+	}
+  .container-calendar {
+    max-width: 100%;
+  }
+  .card-default .card-header {
+    max-height: inherit;
+  }
+
+  .filter-right {
+    margin: 0px 0 10px;
+  }
+
+  .navbar-nav li:last-child a span.hidden-xs {
+    display: none;
+  }
+
+  .modal-dialog {
+    width: 100%;
+    max-width: 740px;
+  }
+
+  .pr-hidden-md {
+    float: left !important;
+    display: block;
+  }
+
+  .pr-hidden-md .margin-left-15 {
+    margin-left: 0px !important;
+    margin-right: 15px !important;
+  }
+
+  .pagination .form-control {
+    height: 28.5px;
+  }
+
+  .pagination>li>a,
+  .pagination>li>span {
+    font-size: 10px;
+    padding: 7.5px 8px;
+  }
+}
+
+/* xs */
+@media (max-width: 767px) {
+	label {
+		font-size: var(--smallfont);
+	}
+  .color-legend {
+    top: 0;
+  }
+
+  .hidden-xs {
+    display: none;
+  }
+
+  .search-filter-top,
+  .search-filter-top .page-heading-top {
+    display: none;
+  }
+  .pr-hidden-sm {
+    float: left !important;
+    display: block;
+  }
+
+  .pr-hidden-sm .margin-left-15 {
+    margin-left: 0px !important;
+    margin-right: 15px !important;
+  }
+
+  .createDiagnosis li:nth-child(odd) {
+    border-right: 0;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+
+  .show {
+    /* display: inline-block !important; */
+    display: block !important;
+  }
+
+  .login {
+    background-size: auto;
+  }
+
+  .navbar {
+    margin-bottom: 10px;
+  }
+
+  .logo .full-logo {
+    width: 154px;
+    display: block;
+  }
+
+  .logo .short-logo {
+    width: 65px;
+    margin: -4px 0 0 0;
+  }
+
+  .logo .btn-close {
+    display: block;
+    margin: 10px;
+    color: #c4403e;
+    position: absolute;
+    left: 87px;
+    font-size: 20px;
+    top: -3px;
+    padding: 10px;
+    border: 0;
+    background: #FFF;
+  }
+
+  .dropdown-menu {
+    background: #fff !important;
+    padding: inherit !important;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    position: absolute;
+    box-shadow: 2px 4px 6PX #DDD;
+    padding-bottom: 10px !important;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin: 0;
+  }
+
+  .search-input {
+    display: none;
+  }
+
+  .navbar-header {
+    margin-left: 0px !important;
+  }
+
+  .nav>li {
+    display: inline-block;
+  }
+
+  /* Change the width of the sidebar to display it*/
+  #wrapper.menuOpen #sidebar-wrapper {
+    width: 0px;
+  }
+
+  #wrapper.menuOpen #page-content-wrapper {
+    padding-left: 0px;
+  }
+
+  #wrapper.menuOpen #sidebar-wrapper li a span,
+  #wrapper.menuOpen #sidebar-wrapper .submenu {
+    display: block;
+  }
+
+  #sidebar-wrapper {
+    opacity: 1;
+  }
+
+  .content-section {
+    padding: 20px;
+  }
+
+  #mt-responsive {
+    display: block;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .tablist-two {
+    margin-left: 0;
+  }
+}
+
+/* XS Portrait */
+@media (max-width: 480px) {
+  .login-box {
+    margin: 20px 0 0;
+    background: #ffffffe0;
+  }
+
+  .content-section {
+    padding: 10px;
+  }
+}

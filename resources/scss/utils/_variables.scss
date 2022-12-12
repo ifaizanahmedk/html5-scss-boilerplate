@@ -27,8 +27,8 @@ $pink: #f1536e;
 $sea-green: #20c5da;
 $sea-green2: #c7dffc;
 $darkGreen: #244b00;
-$green: #19AC2C;
-$green2: #A5BE3F;
+$green: #19ac2c;
+$green2: #a5be3f;
 $turtleGreen: #61b548;
 $lightGreen: #84e19a;
 $orange: #fc4d1a;
@@ -39,7 +39,7 @@ $grey-calendar: #e6e7e8;
 
 /** Theme Colors Pallete */
 $theme__color--light: $white;
-$theme__color--light2: #E5E5E5;
+$theme__color--light2: #e5e5e5;
 $theme__color--light3: #e2e2e2;
 $theme__color--light4: #f5f5f5;
 $theme__color--light5: #fafaff;
@@ -48,35 +48,34 @@ $theme__color--dark: $black;
 $theme__color--dark2: #333333;
 $theme__color--dark3: #474747;
 $theme__color--dark4: #262626;
-$theme__color--dark5: #252B42;
+$theme__color--dark5: #252b42;
 
-/** Theme Main Variables */
-$theme__color--berry: #7494E5;
-$theme__color--leaf: #BCD58A;
+/** Theme Primary Colors */
+$theme__primary-color--green-base: #9bcba2;
+$theme__primary-color--green-lighter: #aad1b0;
+$theme__primary-color--green-highlighted: #b2dcd0;
 
 /** Theme Secondary Variables */
-$theme__color--core: #122F49;
-$theme__color--sunDark: #F78465;
-$theme__color--sunDark3: #F5A690;
-$theme__color--sunDark2: #F3DDD7;
-$theme__color--sunLight: #FDC051;
-$theme__color--sunLight1: #FFD78D;
-$theme__color--bark: #E3C5B0;
-$theme__color--skyDim: #B0C1D5;
-$theme__color--skyLight: #C1E1F8;
+$theme__secondary-color--visits: #b1dbcf;
+$theme__secondary-color--hospitalizations: #dc7b76;
+$theme__secondary-color--procedure: #f79366;
+$theme__secondary-color--medications: #f6d28f;
+$theme__secondary-color--radiology: #7e75d4;
+$theme__secondary-color--labs: #3586ee;
+
+/** Theme Backgrounds Variables */
+$theme__bg--base: #e8eff4;
+$theme__bg--content: $white;
+
+/** Theme Typeset Variables */
+$theme__text-title: $black;
+$theme__text-title--light: #7685b7;
+$theme__text-description: #0f1b52;
+$theme__text-description--light: #7d7d7d;
 
 /** Others */
-$light__l1: #ECF8F8;
-$dark__d1: #161C32;
-$dark__d2: #2E3440;
-$dark__d3: #47586C;
-
-$bg__gray: #ADB5BD;
-$bg__lightGray: #E5E6E4;
-
-$action__green: #4BC65F;
-$actions__red: #EC4D4D;
+$action__green: #4bc65f;
+$actions__red: #ec4d4d;
 
 /** Theme Fonts */
-$theme__font--primary: "Manrope", "Helvetica", "Arial", sans-serif;
-$theme__font--secondary: "Inter", "Helvetica", "Arial", sans-serif;
+$theme__primary-font--poppins: "Poppins", "Helvetica", "Arial", sans-serif;

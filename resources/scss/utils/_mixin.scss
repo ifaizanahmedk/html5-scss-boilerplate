@@ -30,7 +30,7 @@
 }
 
 @function px-to-rem($val: 16) {
-    $remSize: ($val / $rootVal);
+    $remSize: calc($val / $rootVal);
     @return ($remSize * 1rem);
 }
 //* Placeholder *//

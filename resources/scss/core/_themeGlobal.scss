@@ -5,7 +5,7 @@ html {
 
 body {
 	background-color: $theme__color--light5;
-	font-family: $theme__font--primary;
+	font-family: $theme__primary-font--poppins;
 	position: relative;
 	overflow: inherit;
 	scroll-behavior: smooth;
@@ -80,8 +80,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $theme__font--primary;
-	color: $theme__color--berry;
+	font-family: $theme__primary-font--poppins;
+	color: $theme__text-description;
 	cursor: default;
 	margin-bottom: 10px;
 }
@@ -164,7 +164,7 @@ ol,
 ul,
 p {
 	cursor: default;
-	font-family: $theme__font--secondary;
+	font-family: $theme__primary-font--poppins;
 	font-weight: 300;
 	font-size: px-to-rem(14);
 	line-height: 1.33;
@@ -183,14 +183,14 @@ ul {
 
 p {
 	strong {
-		color: $green;
+		color: $theme__text-description;
 		font-weight: 700;
 	}
 }
 
 a {
 	text-decoration: none !important;
-	color: $theme__color--berry;
+	color: $theme__text-description;
 
 	&:visited {
 		color: inherit;
@@ -199,12 +199,12 @@ a {
 	&:hover,
 	&:focus,
 	&:active {
-		color: $theme__color--leaf;
+		color: $theme__text-title;
 	}
 }
 
 small {
-	font-family: $theme__font--secondary;
+	font-family: $theme__primary-font--poppins;
 	font-style: normal;
 	font-weight: 400;
 	font-size: px-to-rem(10);
@@ -216,7 +216,7 @@ small {
 }
 
 .underline {
-	border-bottom: 2px solid $theme__color--berry;
+	border-bottom: 2px solid $theme__text-description;
 }
 
 span.bold-700 {
@@ -235,10 +235,6 @@ blockquote {
 @include config-text-colors(
 	"text-",
 	"white" $theme__color--light,
-	"berry" $theme__color--berry,
-	"leaf" $theme__color--leaf,
-	"sundark" $theme__color--sunDark,
-	"sunlight" $theme__color--sunLight,
 	"blue" $blue,
 	"liBlue" $lightBlue,
 	"green" $turtleGreen,
@@ -256,7 +252,7 @@ blockquote {
 );
 
 .font-light {
-	font-family: $theme__font--primary;
+	font-family: $theme__primary-font--poppins;
 	font-weight: 100;
 }
 
@@ -297,15 +293,15 @@ blockquote {
     Form Elements
 =====================================   */
 input {
-	font-family: $theme__font--secondary;
+	font-family: $theme__primary-font--poppins;
 	font-style: normal;
 	font-weight: 400;
 	font-size: px-to-rem(18);
 	line-height: 1.25;
-	color: $theme__color--core;
+	color: $theme__primary-color--green-base;
 
 	&::placeholder {
-		color: $bg__gray;
+		color: $theme__bg--base;
 	}
 }
 
@@ -349,11 +345,11 @@ input {
 		visibility: visible;
 		&::after {
 			font-size: 2rem;
-			color: $theme__color--core;
+			color: $theme__primary-color--green-base;
 		}
 	}
 	&-pagination-bullet {
-		background-color: $theme__color--core !important;
+		background-color: $theme__primary-color--green-base !important;
 		height: px-to-rem(13) !important;
 		width: px-to-rem(13) !important;
 
@@ -376,68 +372,3 @@ article.page {
 		text-decoration: underline !important;
 	}
 }
-
-/*  =====================================
-    Hero Section with Banner and Title Begins
-=====================================   */
-.hero-section {
-	padding: 20px 0 5vw;
-	background: url("images/about-hero-bg.png") no-repeat center bottom;
-	background-size: cover !important;
-
-	.hero-content {
-		position: relative;
-		width: 100%;
-		height: px-to-rem(420);
-
-		@media only screen and (min-width: $phone) {
-			height: px-to-rem(580);
-		}
-
-		img {
-			width: auto;
-			max-width: initial;
-			height: 100%;
-			background-color: $theme__color--light3;
-			border-radius: 8px;
-			display: block;
-
-			@media only screen and (min-width: $phone) {
-				width: 100%;
-			}
-		}
-
-		.hero-text {
-			position: absolute;
-			bottom: 10%;
-			left: 30px;
-			font-size: px-to-rem(24);
-			font-weight: 700;
-			margin-bottom: 5px;
-			font-family: $theme__font--primary;
-
-			@media only screen and (min-width: $phone) {
-				font-size: px-to-rem(40);
-			}
-
-			&::before {
-				content: "";
-				position: absolute;
-				left: 20px;
-				top: -20px;
-				width: 50px;
-				height: 10px;
-				background: $theme__color--light;
-			}
-
-			span {
-				display: block;
-				background: $green;
-				color: $theme__color--light;
-				padding: 0 px-to-rem(15);
-				margin-top: px-to-rem(10);
-			}
-		}
-	}
-}
-//    Hero Section with Banner and Title Ends

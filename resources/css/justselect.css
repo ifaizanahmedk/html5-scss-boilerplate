@@ -1,0 +1,78 @@
+.justselect-body-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 1;
+}
+
+.justselect {
+	display: none;
+}
+
+.justselect-wrapper {
+	position: relative;
+}
+
+.justselect-title {
+	background: white;
+	text-align: left;
+	border: 1px solid #ddd;
+	padding: 0 15px;
+	height: 36px;
+	width: 100%;
+	line-height: 35px;
+	outline: none;
+	background-image: url("../img/select-caret.png");
+	background-repeat: no-repeat;
+	background-position: calc(100% - 10px);
+	background-size: 18px;
+	cursor: pointer;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 0;
+	font-size: 12px;
+}
+
+.justselect-list {
+	position: absolute;
+	left: 0;
+	top: 40px;
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	border: 0px solid #ebebeb;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shdow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+	display: none;
+	z-index: 1;
+	overflow: hidden;
+	margin: 0;
+	font-size: 14px;
+}
+
+.justselect-list li {
+	line-height: 36px;
+	cursor: pointer;
+	text-align: left;
+	padding: 0 15px;
+	background: white;
+	font-size: 12px;
+}
+
+.justselect-list li.selected, .justselect-list li:hover {
+	background: #1d4063;
+	color:#FFF
+}
+
+.justselect-list.active {
+	display: block;
+}

@@ -1,0 +1,27 @@
+/*   =====================================
+     MedCare MSO Icons classes
+=====================================    */
+.msoi {
+    width: px-to-rem(24);
+    height: px-to-rem(24);
+    font-size: px-to-rem(24);
+    position: relative;
+    display: inline-block;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    &-magnifying-glass {
+        &::before {
+            background-image: url("./icons/magnifying-glass.svg");
+        }
+    }
+}

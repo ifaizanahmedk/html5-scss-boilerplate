@@ -1,0 +1,21 @@
+/*
+Theme Name: Heal Us
+Theme URI: https://healus.medcaremso.com/
+Author: MedcareMSO Development Team
+Author URI: https://healus.medcaremso.com/
+Description: Multi-Purpose Dashbaord Theme
+Version: 20221212.1100
+Text Domain: healus-medcaremso.com
+License: http://themeforest.net/licenses
+License URI: http://themeforest.net/licenses
+*/
+
+/***************
+    All custom CSS should be imported here
+***************/
+
+/** Theme Direction Variables */
+@import "./utils/variables-ltr";
+
+/** Theme Style Imports */
+@import "./style-imports";

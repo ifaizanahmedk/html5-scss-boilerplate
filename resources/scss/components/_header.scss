@@ -1,0 +1,14 @@
+header.header-main {
+    .form__search-patients {
+        width: px-to-rem(455);
+
+        .form-floating-icon {
+            width: 100%;
+        }
+
+        .form-control.search-patients {
+            background-color: $theme__bg--base;
+            width: 100%;
+        }
+    }
+}

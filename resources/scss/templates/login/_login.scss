@@ -1,0 +1,145 @@
+$pathToAssets: "../../../resources/";
+.login-page-main {
+    background: $white;
+
+    .login-container {
+        height: 100%;
+
+        @media screen and (min-width: $tabletLg) {
+            height: 100%;
+        }
+    }
+
+    a {
+        color: $azure !important;
+    }
+
+    .login {
+        &-poster {
+            height: 100vh;
+            padding: 30px;
+            background-color: $theme__primary-color--green-base;
+            position: relative;
+            overflow: hidden;
+
+            @media screen and (min-width: $tablet) {
+                height: 30vh;
+            }
+
+            @media screen and (min-width: $tabletLg) {
+                height: 100vh;
+            }
+
+            .bg-logo {
+                position: absolute;
+                min-width: 100vw;
+                min-height: 100%;
+                top: -50%;
+                #{app-left}: -50%;
+                background-image: url("#{$pathToAssets}img/loginimg.svg");
+                @include transform(translate3d(-49%, -10%, 0) rotate(135deg));
+                background-size: 35%;
+                z-index: 2;
+                background-repeat: repeat-x;
+                background-position: top;
+
+                @media screen and (min-width: $tablet) {
+                    @include transform(translate3d(2%, -15%, 0) rotate(135deg));
+                    background-size: 35%;
+                }
+
+                @media screen and (min-width: $tabletLg) {
+                    @include transform(translate3d(-57%, -8%, 0) rotate(135deg));
+                    background-size: 60%;
+                }
+
+                @media screen and (min-width: $laptop) {
+                    @include transform(translate3d(-34%, 9%, 0) rotate(135deg));
+                    background-size: 70%;
+                }
+
+                @media screen and (min-width: $laptopLg) {
+                    @include transform(translate3d(-31%, 18%, 0) rotate(135deg));
+                    background-size: 80%;
+                }
+
+                @media screen and (min-width: $desktop) {
+                    @include transform(translate3d(-16%, 14%, 0) rotate(135deg));
+                    background-size: initial;
+                }
+            }
+
+            .login-poster_logo {
+                z-index: 2;
+            }
+        }
+
+        &-form {
+            padding: 30px;
+
+            .createaccount {
+                font-size: 16px;
+                color: $grey3;
+            }
+
+            .form-title {
+                font-weight: 600;
+                font-size: px-to-rem(45);
+                color: $black;
+            }
+
+            .form-subtitle {
+                font-size: 16px;
+                color: $grey3;
+            }
+
+            .form-control {
+                border: 1px solid #e3e9fa;
+                border-radius: 3px;
+                height: 50px;
+
+                &:focus {
+                    border-color: $theme__primary-color--green-base !important;
+                    box-shadow: none;
+                }
+            }
+
+            label {
+                font-weight: 600;
+                font-size: 24px;
+                color: $black;
+                margin-bottom: 10px;
+            }
+
+            .forgot-pass {
+                font-weight: 500;
+                font-size: 16px;
+                color: $azure;
+            }
+            .contact-admin {
+                font-size: px-to-rem(16);
+            }
+        }
+    }
+
+    .validate {
+        .bg-logo {
+            background-image: url("#{$pathToAssets}img/dark-bg.svg") !important;
+        }
+    }
+
+    .required {
+        color: $red;
+        font-size: 14px;
+    }
+    .errormsg {
+        color: $red;
+    }
+    .h-100vh {
+        height: 100vh;
+    }
+}
+
+.form-check {
+    display: none;
+}

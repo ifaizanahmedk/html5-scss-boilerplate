@@ -1,57 +1,118 @@
-/*  =====================================
-    Dropdown Configuration
-=====================================   */
-.dropdown-item {
-    padding: 0;
-    font-size: px-to-rem(14);
-    line-height: 1.6;
-    color: $dark__d3;
-    font-family: $theme__font--primary;
-    font-weight: 600;
-    text-align: left;
-    letter-spacing: 0.2px;
-    line-height: px-to-rem(24);
-    display: block;
-    max-width: max-content;
-
-    @media screen and (min-width: $laptop) {
-        @include font-size(18);
-    }
-
-    i {
-        line-height: inherit;
-    }
-}
-.dropdown-item:hover,
-.dropdown-item.active,
-.dropdown-item:active {
-    background-color: transparent;
-    border-bottom: none;
-}
-
-.dropdown-menu {
-    min-width: px-to-rem(240);
-    background-color: $white;
-    border: 2px solid $theme__color--berry;
-    border-radius: 5px;
-    position: absolute;
-    top: 40px;
-    padding: 20px;
-    text-align: left;
-    max-width: px-to-rem(300);
+/*===============================
+  Bootstrap Modal Customization
+  ================================*/
+.modal {
+    position: fixed;
+    top: 0;
+    #{app-right}: 0;
+    bottom: 0;
+    #{app-left}: 0;
+    z-index: 1050;
     display: none;
-    box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
+    overflow: hidden;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.65);
 
-    i {
-        color: $theme__color--berry;
-        position: absolute;
-        top: -12px;
-        left: 12px;
-        background-color: $white;
+    &.fade {
+        opacity: 0;
+        @include transition(opacity 0.15s linear);
+
+        .modal-dialog {
+            @include transform(translate(0, -25%));
+            @include transition(transform 0.3s ease-out);
+        }
+    }
+
+    &.fade.show {
+        opacity: 1;
+
+        .modal-dialog {
+            @include transform(translate(0, 0));
+        }
     }
 }
 
-.show {
-    display: block;
+.modal-open {
+    overflow: hidden;
 }
-//Dropdown Configuration Ends
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-dialogue {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+
+.modal-dialog-centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - (0.5rem * 2));
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    background-clip: padding-box;
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+.modal-header {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+
+    .close {
+        opacity: 1;
+        font-size: 0.75rem;
+    }
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1;
+    font-family: $theme__primary-font;
+    font-size: 2rem;
+    letter-spacing: 0;
+    color: $theme__color--dark4;
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+//Bootstrap Modal Customization

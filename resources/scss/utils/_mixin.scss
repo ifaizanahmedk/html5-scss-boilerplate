@@ -30,7 +30,7 @@
 }
 
 @function px-to-rem($val: 16) {
-    $remSize: ($val / $rootVal);
+    $remSize: calc($val / $rootVal);
     @return ($remSize * 1rem);
 }
 //* Placeholder *//
@@ -261,18 +261,18 @@ $spaceamounts: (
     95,
     100
 ); // Adjust this to include the pixel amounts you need.
-$sides: (top, bottom, left, right); // Leave this variable alone
+$sides: (top, bottom, start, end); // Leave this variable alone
 $position: (sticky, fixed, relative, absolute); // custom positions values
 .m-auto {
     margin: auto;
 }
-.m-r-auto {
-    margin-right: auto;
+.m-e-auto {
+    margin-#{$app-right}: auto;
 }
-.m-l-auto {
-    margin-left: auto;
+.m-s-auto {
+    margin-#{$app-left}: auto;
 }
-.m-lr-auto {
+.m-se-auto {
     margin: 0 auto;
 }
 .m-tb-auto {
@@ -285,16 +285,34 @@ $position: (sticky, fixed, relative, absolute); // custom positions values
 
         //custom margins against sides
         .m-#{str-slice($side, 0, 1)}-#{$space} {
-            margin-#{$side}: #{$space}px !important;
+            @if $side == end {
+                margin-#{$app-right}: #{$space}px !important;
+            } @else if $side == start {
+                margin-#{$app-left}: #{$space}px !important;
+            } @else {
+                margin-#{$side}: #{$space}px !important;
+            }
         }
 
         //custom paddings against sides
         .p-#{str-slice($side, 0, 1)}-#{$space} {
-            padding-#{$side}: #{$space}px !important;
+            @if $side == end {
+                padding-#{$app-right}: #{$space}px !important;
+            } @else if $side == start {
+                padding-#{$app-left}: #{$space}px !important;
+            } @else {
+                padding-#{$side}: #{$space}px !important;
+            }
         }
 
         .border-#{str-slice($side, 0, 1)}-#{$space} {
-            border-#{$side}: #{$space}px !important;
+            @if $side == end {
+                border-#{$app-right}: #{$space}px !important;
+            } @else if $side == start {
+                border-#{$app-left}: #{$space}px !important;
+            } @else {
+                border-#{$side}: #{$space}px !important;
+            }
         }
     }
 

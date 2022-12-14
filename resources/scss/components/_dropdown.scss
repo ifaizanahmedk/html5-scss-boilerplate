@@ -3,50 +3,46 @@
 =====================================   */
 .dropdown-item {
     padding: 0;
-    font-size: px-to-rem(14);
+    font-size: px-to-rem(18);
     line-height: 1.6;
-    color: $dark__d3;
-    font-family: $theme__font--primary;
-    font-weight: 600;
-    text-align: left;
+    color: $theme__text-title;
+    font-family: $theme__primary-font;
+    font-weight: normal;
+    text-align: $app-left;
     letter-spacing: 0.2px;
     line-height: px-to-rem(24);
     display: block;
     max-width: max-content;
 
-    @media screen and (min-width: $lg) {
+    @media screen and (min-width: $laptop) {
         @include font-size(18);
     }
 
     i {
         line-height: inherit;
     }
-}
-.dropdown-item:hover,
-.dropdown-item.active,
-.dropdown-item:active {
-    background-color: transparent;
-    border-bottom: none;
+
+    &:hover,
+    &.active,
+    &:active {
+        background-color: transparent;
+        border-bottom: none;
+    }
 }
 
 .dropdown-menu {
     min-width: px-to-rem(240);
     background-color: $white;
-    border: 2px solid $theme__color--berry;
-    border-radius: 5px;
-    position: absolute;
-    top: 40px;
-    padding: 20px;
-    text-align: left;
-    max-width: px-to-rem(300);
-    display: none;
-    box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
+    border: none;
+    border-radius: 4px;
+    text-align: $app-left;
+    box-shadow: 0px 3px 114px rgba(15, 27, 82, 0.2);
 
     i {
-        color: $theme__color--berry;
+        color: $theme__text-description;
         position: absolute;
         top: -12px;
-        left: 12px;
+        #{$app-left}: 12px;
         background-color: $white;
     }
 }
@@ -55,3 +51,21 @@
     display: block;
 }
 //Dropdown Configuration Ends
+
+/* =================================
+   Theme Dropdowns Customizations 
+====================================*/
+.dropdown {
+    &__profile {
+        .dropdown-toggle {
+            padding: 0;
+
+            .img-thumbnail {
+                border: none;
+                width: px-to-rem(40);
+                height: px-to-rem(40);
+                padding: 0;
+            }
+        }
+    }
+}

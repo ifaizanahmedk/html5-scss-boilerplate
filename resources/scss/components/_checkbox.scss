@@ -4,7 +4,7 @@
 .custom-checkbox {
     display: inline-block;
     position: relative;
-    padding-left: 2rem;
+    padding-#{$app-left}: 2rem;
     margin-bottom: 1rem;
     cursor: pointer;
     font-size: 2rem;
@@ -13,16 +13,16 @@
     -ms-user-select: none;
     user-select: none;
     height: auto;
-    margin-right: 1rem;
+    margin-#{$app-right}: 1rem;
 
     /* Hide the browser's default radio button */
     input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
-        left: 0;
+        #{app-left}: 0;
         top: 0;
-        right: 0;
+        #{app-right}: 0;
         bottom: 0;
         margin: auto;
         width: 100%;
@@ -33,7 +33,7 @@
     .checkmark {
         position: absolute;
         top: 0;
-        left: 0;
+        #{app-left}: 0;
         width: 2.1875rem;
         height: 2.1875rem;
         background-color: transparent;
@@ -68,7 +68,7 @@
     /* Style the indicator (dot/circle) */
     //.checkmark:after {
     //  top: 9px;
-    //  left: 9px;
+    //  #{app-left}: 9px;
     //  width: 8px;
     //  height: 8px;
     //  border-radius: 50%;

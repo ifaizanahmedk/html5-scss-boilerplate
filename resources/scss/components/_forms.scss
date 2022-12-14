@@ -1,57 +1,199 @@
 /*  =====================================
-    Dropdown Configuration
+    Form Configuration
 =====================================   */
-.dropdown-item {
-    padding: 0;
-    font-size: px-to-rem(14);
-    line-height: 1.6;
-    color: $dark__d3;
-    font-family: $theme__font--primary;
-    font-weight: 600;
-    text-align: left;
-    letter-spacing: 0.2px;
-    line-height: px-to-rem(24);
-    display: block;
-    max-width: max-content;
+form.custom-form {
+    margin: 1.25rem auto;
 
-    @media screen and (min-width: $lg) {
-        @include font-size(18);
+    a[type="submit"] {
+        padding: 1rem 2rem;
+        -webkit-appearance: inherit;
     }
 
-    i {
-        line-height: inherit;
+    .form-group {
+        position: relative;
+    }
+
+    .form-control {
+        height: auto;
+        padding: 1.0625rem 1.375rem;
+        font-size: 0.875rem;
+        font-family: $theme__primary-font;
+        letter-spacing: 0;
+        margin: 0;
+        border-radius: 0;
+        //border: none;
+        border: none;
+        background-color: $paleGrey;
+        color: rgba(0, 0, 0, 1);
+        //opacity: 0.3;
+
+        &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        &::-moz-placeholder {
+            /* Firefox 19+ */
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        &:-ms-input-placeholder {
+            /* IE 10+ */
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        &:-moz-placeholder {
+            /* Firefox 18- */
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        &.is-valid {
+        }
+
+        &.is-invalid {
+        }
+    }
+
+    label {
+        text-align: $app-left;
+        font-family: $theme__primary-font;
+        font-size: 0.875rem;
+        letter-spacing: 0.7px;
+        color: $theme__color--dark4;
+        opacity: 1;
+        margin-bottom: 1rem;
+        margin-#{$app-left}: 0.5rem;
+    }
+
+    select {
+        text-indent: 1px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 100%;
+        text-overflow: ellipsis;
+        background-image: url(http://cdn2.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png);
+        background-repeat: no-repeat;
+        background-size: 0.8rem;
+        background-position: calc(100% - 1.375rem) center;
+    }
+
+    .form-text {
+        text-align: $app-left;
+        font-family: $theme__primary-font;
+        font-size: 0.875rem;
+        letter-spacing: 0.7px;
+        opacity: 1;
+        margin-bottom: 1rem;
+        margin-#{$app-left}: 0.5rem;
+    }
+
+    .custom-checkbox.show-password {
+        padding-#{$app-left}: 2rem;
+
+        .checkmark {
+            width: 1.75rem;
+            height: 1.75rem;
+        }
+
+        .checkmark i {
+            font-size: 0.75rem;
+        }
+    }
+
+    .custom-checkbox.transport-type {
+        height: 5rem;
+        padding-#{$app-left}: 5rem;
     }
 }
-.dropdown-item:hover,
-.dropdown-item.active,
-.dropdown-item:active {
-    background-color: transparent;
-    border-bottom: none;
+
+.noresize {
+    resize: none;
 }
 
-.dropdown-menu {
-    min-width: px-to-rem(240);
-    background-color: $white;
-    border: 2px solid $theme__color--berry;
-    border-radius: 5px;
-    position: absolute;
-    top: 40px;
-    padding: 20px;
-    text-align: left;
-    max-width: px-to-rem(300);
-    display: none;
-    box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
+.vresize {
+    resize: vertical;
+}
 
-    i {
-        color: $theme__color--berry;
+.hresize {
+    resize: horizontal;
+}
+//Form Configuration Ends
+
+/*  =====================================
+    Form Elements
+=====================================   */
+input {
+    font-family: $theme__primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: px-to-rem(18);
+    line-height: 1.25;
+    color: $theme__primary-color--green-base;
+
+    &::placeholder {
+        color: $theme__bg--base;
+    }
+
+    &.form-control {
+        padding: px-to-rem(13) px-to-rem(14);
+        border-radius: px-to-rem(8);
+
+        &:focus {
+        }
+    }
+}
+
+// Form Elements Ends
+
+/*  =====================================
+    Form Control with Floating Icon
+=====================================   */
+.form-floating-icon {
+    position: relative;
+
+    .form-control {
+        border: 1px solid transparent;
+    }
+
+    & > label {
         position: absolute;
-        top: -12px;
-        left: 12px;
-        background-color: $white;
+        display: inline-block;
+        top: 0;
+        #{$app-left}: 0;
+        width: auto;
+        height: 100%;
+        padding: px-to-rem(13) px-to-rem(14);
+        overflow: hidden;
+        text-align: $app-left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        pointer-events: none;
+        border: 1px solid transparent;
+        transform-origin: 0 0;
+        opacity: 0.45;
+        @include transition(all 0.1s ease-in-out);
+        text-align: $app-left;
+    }
+
+    & > .form-control-plaintext ~ label,
+    & > .form-control:focus ~ label,
+    & > .form-control:not(:placeholder-shown) ~ label,
+    & > .form-select ~ label {
+        opacity: 1;
+        #{$app-left}: auto;
+        #{$app-right}: 0;
+    }
+
+    & > .form-control-plaintext,
+    & > .form-control,
+    & > .form-select {
+        padding-#{$app-left}: px-to-rem(48);
+        @include transition(all 0.1s ease-in-out);
+
+        &:focus {
+            padding-#{$app-left}: px-to-rem(14);
+        }
     }
 }
-
-.show {
-    display: block;
-}
-//Dropdown Configuration Ends
+// Form Control with Floating Icon

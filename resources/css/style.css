@@ -15,14 +15,46 @@ License URI: http://themeforest.net/licenses
 /** Theme Root Px Value */
 /** Theme Colors */
 /** Theme Colors Pallete */
-/** Theme Main Variables */
+/** Theme Primary Colors */
 /** Theme Secondary Variables */
+/** Theme Backgrounds Variables */
+/** Theme Typeset Variables */
+/** Theme Typeset Variables */
 /** Others */
 /** Theme Fonts */
-/* Manrope Font Family */
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap");
-/* Inter Font Family */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+/* Poppins Font Family */
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/"), url("../../fonts/Poppins-SemiBold.eot");
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url("../../fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../../fonts/Poppins-SemiBold.woff") format("woff"), url("../../fonts/Poppins-SemiBold.ttf") format("ttf"), url("../../fonts/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins-Medium.eot");
+  src: local("Poppins Medium"), local("Poppins-Medium"), url("../../fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Poppins-Medium.woff2") format("woff2"), url("../../fonts/Poppins-Medium.woff") format("woff"), url("../../fonts/Poppins-Medium.ttf") format("ttf"), url("../../fonts/Poppins-Medium.svg#Poppins-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins-Regular.eot");
+  src: local("Poppins Regular"), local("Poppins-Regular"), url("../../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Poppins-Regular.woff2") format("woff2"), url("../../fonts/Poppins-Regular.ttf") format("ttf"), url("../../fonts/Poppins-Regular.woff") format("woff"), url("../../fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/Poppins-Bold.eot");
+  src: local("Poppins Bold"), local("Poppins-Bold"), url("../../fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Poppins-Bold.woff2") format("woff2"), url("../../fonts/Poppins-Bold.woff") format("woff"), url("../../fonts/Poppins-Bold.ttf") format("ttf"), url("../../fonts/Poppins-Bold.svg#Poppins-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
 .m-auto {
   margin: auto;
 }
@@ -1557,8 +1589,8 @@ img.lazy.loading {
   line-height: 1.5;
   font-weight: 600;
   color: #fff;
-  font-family: "Inter", "Helvetica", "Arial", sans-serif;
-  background-color: #7494E5;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  background-color: #9bcba2;
   border: 1px solid;
   float: none;
   -webkit-border-radius: 5px;
@@ -1590,7 +1622,7 @@ img.lazy.loading {
   outline: none;
   outline-color: transparent;
   box-shadow: none;
-  background-color: #122F49;
+  background-color: #b2dcd0;
   color: #fff;
 }
 [class*=btn-]:active {
@@ -1602,14 +1634,14 @@ img.lazy.loading {
 
 [class*=btn-secondary] {
   background-color: transparent;
-  border: 1px solid #122F49;
-  color: #122F49;
+  border: 1px solid #b2dcd0;
+  color: #b2dcd0;
 }
 [class*=btn-secondary]:hover {
   outline: none;
   outline-color: transparent;
   box-shadow: none;
-  background-color: #122F49;
+  background-color: #b2dcd0;
   color: #fff;
 }
 
@@ -1621,7 +1653,7 @@ img.lazy.loading {
   margin: 6.35rem auto 0;
   display: table;
   border: 1px solid #000;
-  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -1636,7 +1668,7 @@ img.lazy.loading {
   right: 0;
   color: #fff;
   border-radius: 50%;
-  background-color: #19AC2C;
+  background-color: #19ac2c;
   background-origin: content-box;
   background-repeat: no-repeat;
   background-position: center;
@@ -1656,14 +1688,14 @@ img.lazy.loading {
 [class*=btn-tertiary] {
   background-color: transparent;
   border: 0;
-  color: #122F49;
+  color: #b2dcd0;
 }
 [class*=btn-tertiary]:hover {
   outline: none;
   outline-color: transparent;
   box-shadow: none;
   background-color: transparent;
-  color: #F78465;
+  color: #9bcba2;
 }
 
 .btn-white {
@@ -1685,13 +1717,13 @@ img.lazy.loading {
 }
 
 .btn-green {
-  background-color: #19AC2C;
+  background-color: #19ac2c;
   color: #fff;
   border: none;
 }
 
 .btn-green--olive {
-  background-color: #A5BE3F;
+  background-color: #a5be3f;
   color: #fff;
   border: none;
 }
@@ -1748,7 +1780,7 @@ img.lazy.loading {
   white-space: normal;
   text-align: left;
   width: 100%;
-  font-family: "CircularStd-Book", sans-serif;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   line-height: 1.3;
   letter-spacing: 0.8px;
   padding: 0.6rem 1rem;
@@ -1759,7 +1791,7 @@ img.lazy.loading {
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: transparent;
-  color: #122F49;
+  color: #9bcba2;
   border: none;
 }
 .accordion .card-body {
@@ -1767,61 +1799,132 @@ img.lazy.loading {
   padding: 1rem 1.25rem;
 }
 
-/*  =====================================
-    Dropdown Configuration
-=====================================   */
-.dropdown-item {
-  padding: 0;
-  font-size: 0.875rem;
-  line-height: 1.6;
-  color: #47586C;
-  font-family: "Manrope", "Helvetica", "Arial", sans-serif;
-  font-weight: 600;
-  text-align: left;
-  letter-spacing: 0.2px;
-  line-height: 1.5rem;
-  display: block;
-  max-width: max-content;
-}
-@media screen and (min-width: 1200px) {
-  .dropdown-item {
-    font-size: 1.125rem;
-  }
-}
-.dropdown-item i {
-  line-height: inherit;
-}
-
-.dropdown-item:hover,
-.dropdown-item.active,
-.dropdown-item:active {
-  background-color: transparent;
-  border-bottom: none;
-}
-
-.dropdown-menu {
-  min-width: 15rem;
-  background-color: #fff;
-  border: 2px solid #7494E5;
-  border-radius: 5px;
-  position: absolute;
-  top: 40px;
-  padding: 20px;
-  text-align: left;
-  max-width: 18.75rem;
+/*===============================
+  Bootstrap Modal Customization
+  ================================*/
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
   display: none;
-  box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.75);
+  overflow: hidden;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.65);
 }
-.dropdown-menu i {
-  color: #7494E5;
-  position: absolute;
-  top: -12px;
-  left: 12px;
-  background-color: #fff;
+.modal.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -moz-transition: opacity 0.15s linear;
+  -ms-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.modal.fade .modal-dialog {
+  -moz-transform: translate(0, -25%);
+  -webkit-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.modal.fade.show {
+  opacity: 1;
+}
+.modal.fade.show .modal-dialog {
+  -moz-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
-.show {
-  display: block;
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal-dialogue {
+  position: relative;
+  width: auto;
+  margin: 0.5rem;
+  pointer-events: none;
+}
+
+.modal-dialog-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  background-clip: padding-box;
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.modal-header {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+.modal-header .close {
+  opacity: 1;
+  font-size: 0.75rem;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0;
+  color: #262626;
+  opacity: 1;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-top: 1px solid #e9ecef;
 }
 
 /* Theme Global Style Overrides */
@@ -1831,7 +1934,7 @@ html {
 
 body {
   background-color: #fafaff;
-  font-family: "Manrope", "Helvetica", "Arial", sans-serif;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   position: relative;
   overflow: inherit;
   scroll-behavior: smooth;
@@ -1877,8 +1980,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Manrope", "Helvetica", "Arial", sans-serif;
-  color: #7494E5;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  color: #0f1b52;
   cursor: default;
   margin-bottom: 10px;
 }
@@ -1902,7 +2005,7 @@ h2 {
   font-size: 1.875rem;
   line-height: 1.25;
   position: relative;
-  color: #19AC2C;
+  color: #19ac2c;
   letter-spacing: 1.2px;
   margin: 2.8125rem 0 1.25rem;
 }
@@ -1965,7 +2068,7 @@ ol,
 ul,
 p {
   cursor: default;
-  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   font-size: 0.875rem;
   line-height: 1.33;
@@ -1986,23 +2089,23 @@ ul {
 }
 
 p strong {
-  color: #19AC2C;
+  color: #0f1b52;
   font-weight: 700;
 }
 
 a {
   text-decoration: none !important;
-  color: #7494E5;
+  color: #0f1b52;
 }
 a:visited {
   color: inherit;
 }
 a:hover, a:focus, a:active {
-  color: #BCD58A;
+  color: #000;
 }
 
 small {
-  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.625rem;
@@ -2015,7 +2118,7 @@ small {
 }
 
 .underline {
-  border-bottom: 2px solid #7494E5;
+  border-bottom: 2px solid #0f1b52;
 }
 
 span.bold-700 {
@@ -2033,22 +2136,6 @@ blockquote {
 =====================================   */
 .text-white {
   color: #fff !important;
-}
-
-.text-berry {
-  color: #7494E5 !important;
-}
-
-.text-leaf {
-  color: #BCD58A !important;
-}
-
-.text-sundark {
-  color: #F78465 !important;
-}
-
-.text-sunlight {
-  color: #FDC051 !important;
 }
 
 .text-blue {
@@ -2108,7 +2195,7 @@ blockquote {
 }
 
 .font-light {
-  font-family: "Manrope", "Helvetica", "Arial", sans-serif;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   font-weight: 100;
 }
 
@@ -2145,15 +2232,15 @@ blockquote {
     Form Elements
 =====================================   */
 input {
-  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.25;
-  color: #122F49;
+  color: #9bcba2;
 }
 input::placeholder {
-  color: #ADB5BD;
+  color: #e8eff4;
 }
 
 /*  =====================================
@@ -2194,10 +2281,10 @@ input::placeholder {
 }
 .swiper-button-next::after, .swiper-button-prev::after {
   font-size: 2rem;
-  color: #122F49;
+  color: #9bcba2;
 }
 .swiper-pagination-bullet {
-  background-color: #122F49 !important;
+  background-color: #9bcba2 !important;
   height: 0.8125rem !important;
   width: 0.8125rem !important;
 }
@@ -2217,66 +2304,4 @@ article.page {
 }
 article.page a {
   text-decoration: underline !important;
-}
-
-/*  =====================================
-    Hero Section with Banner and Title Begins
-=====================================   */
-.hero-section {
-  padding: 20px 0 5vw;
-  background: url("images/about-hero-bg.png") no-repeat center bottom;
-  background-size: cover !important;
-}
-.hero-section .hero-content {
-  position: relative;
-  width: 100%;
-  height: 26.25rem;
-}
-@media only screen and (min-width: 577px) {
-  .hero-section .hero-content {
-    height: 36.25rem;
-  }
-}
-.hero-section .hero-content img {
-  width: auto;
-  max-width: initial;
-  height: 100%;
-  background-color: #e2e2e2;
-  border-radius: 8px;
-  display: block;
-}
-@media only screen and (min-width: 577px) {
-  .hero-section .hero-content img {
-    width: 100%;
-  }
-}
-.hero-section .hero-content .hero-text {
-  position: absolute;
-  bottom: 10%;
-  left: 30px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-family: "Manrope", "Helvetica", "Arial", sans-serif;
-}
-@media only screen and (min-width: 577px) {
-  .hero-section .hero-content .hero-text {
-    font-size: 2.5rem;
-  }
-}
-.hero-section .hero-content .hero-text::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: -20px;
-  width: 50px;
-  height: 10px;
-  background: #fff;
-}
-.hero-section .hero-content .hero-text span {
-  display: block;
-  background: #19AC2C;
-  color: #fff;
-  padding: 0 0.9375rem;
-  margin-top: 0.625rem;
 }/*# sourceMappingURL=style.css.map */

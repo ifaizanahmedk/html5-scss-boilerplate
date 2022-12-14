@@ -1,19 +1,19 @@
-/* The web app manifest is a simple JSON file that allows you to control 
-how your app appears on a device's home screen, what it looks like when it 
-launches in that context and what happens when it is launched. This allows 
-for much greater` control over the UI of a saved site or web app on a mobile device.
-*/
 {
-	"short_name": "",
-	"name": "",
+	"short_name": "Heal US",
+	"name": "Heal Us (MedCare MSO)",
 	"icons": [
 		{
-			"src": "icon.png",
+			"src": "/favicon.png",
 			"type": "image/png",
-			"sizes": "192x192"
+			"sizes": "40x40"
+		},
+		{
+			"src": "/favicon.svg",
+			"type": "image/svg",
+			"sizes": "40x40"
 		}
 	],
 	"start_url": "/?utm_source=homescreen",
-	"background_color": "#fafafa",
-	"theme_color": "#fafafa"
+	"background_color": "#E8EFF4",
+	"theme_color": "#A4CFAB"
 }

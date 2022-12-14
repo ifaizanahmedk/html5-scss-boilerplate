@@ -4,9 +4,9 @@
 .modal {
     position: fixed;
     top: 0;
-    right: 0;
+    #{app-right}: 0;
     bottom: 0;
-    left: 0;
+    #{app-left}: 0;
     z-index: 1050;
     display: none;
     overflow: hidden;
@@ -90,7 +90,7 @@
 .modal-title {
     margin-bottom: 0;
     line-height: 1;
-    font-family: $theme__primary-font--poppins;
+    font-family: $theme__primary-font;
     font-size: 2rem;
     letter-spacing: 0;
     color: $theme__color--dark4;

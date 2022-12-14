@@ -17,7 +17,7 @@ form.custom-form {
         height: auto;
         padding: 1.0625rem 1.375rem;
         font-size: 0.875rem;
-        font-family: $theme__primary-font--poppins;
+        font-family: $theme__primary-font;
         letter-spacing: 0;
         margin: 0;
         border-radius: 0;
@@ -55,14 +55,14 @@ form.custom-form {
     }
 
     label {
-        text-align: left;
-        font-family: $theme__primary-font--poppins;
+        text-align: $app-left;
+        font-family: $theme__primary-font;
         font-size: 0.875rem;
         letter-spacing: 0.7px;
         color: $theme__color--dark4;
         opacity: 1;
         margin-bottom: 1rem;
-        margin-left: 0.5rem;
+        margin-#{$app-left}: 0.5rem;
     }
 
     select {
@@ -79,17 +79,17 @@ form.custom-form {
     }
 
     .form-text {
-        text-align: left;
-        font-family: $theme__primary-font--poppins;
+        text-align: $app-left;
+        font-family: $theme__primary-font;
         font-size: 0.875rem;
         letter-spacing: 0.7px;
         opacity: 1;
         margin-bottom: 1rem;
-        margin-left: 0.5rem;
+        margin-#{$app-left}: 0.5rem;
     }
 
     .custom-checkbox.show-password {
-        padding-left: 2rem;
+        padding-#{$app-left}: 2rem;
 
         .checkmark {
             width: 1.75rem;
@@ -103,7 +103,7 @@ form.custom-form {
 
     .custom-checkbox.transport-type {
         height: 5rem;
-        padding-left: 5rem;
+        padding-#{$app-left}: 5rem;
     }
 }
 
@@ -119,3 +119,81 @@ form.custom-form {
     resize: horizontal;
 }
 //Form Configuration Ends
+
+/*  =====================================
+    Form Elements
+=====================================   */
+input {
+    font-family: $theme__primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: px-to-rem(18);
+    line-height: 1.25;
+    color: $theme__primary-color--green-base;
+
+    &::placeholder {
+        color: $theme__bg--base;
+    }
+
+    &.form-control {
+        padding: px-to-rem(13) px-to-rem(14);
+        border-radius: px-to-rem(8);
+
+        &:focus {
+        }
+    }
+}
+
+// Form Elements Ends
+
+/*  =====================================
+    Form Control with Floating Icon
+=====================================   */
+.form-floating-icon {
+    position: relative;
+
+    .form-control {
+        border: 1px solid transparent;
+    }
+
+    & > label {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        #{$app-left}: 0;
+        width: auto;
+        height: 100%;
+        padding: px-to-rem(13) px-to-rem(14);
+        overflow: hidden;
+        text-align: $app-left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        pointer-events: none;
+        border: 1px solid transparent;
+        transform-origin: 0 0;
+        opacity: 0.45;
+        @include transition(all 0.1s ease-in-out);
+        text-align: $app-left;
+    }
+
+    & > .form-control-plaintext ~ label,
+    & > .form-control:focus ~ label,
+    & > .form-control:not(:placeholder-shown) ~ label,
+    & > .form-select ~ label {
+        opacity: 1;
+        #{$app-left}: auto;
+        #{$app-right}: 0;
+    }
+
+    & > .form-control-plaintext,
+    & > .form-control,
+    & > .form-select {
+        padding-#{$app-left}: px-to-rem(48);
+        @include transition(all 0.1s ease-in-out);
+
+        &:focus {
+            padding-#{$app-left}: px-to-rem(14);
+        }
+    }
+}
+// Form Control with Floating Icon

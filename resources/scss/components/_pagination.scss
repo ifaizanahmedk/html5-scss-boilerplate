@@ -7,8 +7,8 @@
 .pagination {
     &--section {
         position: fixed;
-        left: 0;
-        right: 0;
+        #{app-left}: 0;
+        #{app-right}: 0;
         top: 0;
         z-index: 50;
         padding: 0;
@@ -17,11 +17,11 @@
     &--list {
         position: absolute;
         list-style: none;
-        right: 0;
+        #{app-right}: 0;
         top: auto;
         bottom: auto;
         margin: auto;
-        left: auto;
+        #{app-left}: auto;
         height: auto;
         @include display-flex();
         @include flex-dir(column);

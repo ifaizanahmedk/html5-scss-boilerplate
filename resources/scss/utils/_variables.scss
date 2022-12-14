@@ -66,6 +66,7 @@ $theme__secondary-color--labs: #3586ee;
 /** Theme Backgrounds Variables */
 $theme__bg--base: #e8eff4;
 $theme__bg--content: $white;
+$theme__bg--green: #a4cfab;
 
 /** Theme Typeset Variables */
 $theme__text-title: $black;
@@ -73,9 +74,19 @@ $theme__text-title--light: #7685b7;
 $theme__text-description: #0f1b52;
 $theme__text-description--light: #7d7d7d;
 
+/** Theme Typeset Variables */
+$theme__icon--active: #0f1b52;
+$theme__icon--inactive: #7685b7;
+
 /** Others */
 $action__green: #4bc65f;
 $actions__red: #ec4d4d;
 
 /** Theme Fonts */
 $theme__primary-font--poppins: "Poppins", "Helvetica", "Arial", sans-serif;
+$theme__primary-font--noto: "Noto Sans Arabic", sans-serif;
+$theme__primary-font: $theme__primary-font--poppins !default;
+
+@if $app-direction == rtl {
+    $theme__primary-font: $theme__primary-font--noto;
+}

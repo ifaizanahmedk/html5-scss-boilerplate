@@ -4,7 +4,7 @@ Theme URI: https://healus.medcaremso.com/
 Author: MedcareMSO Development Team
 Author URI: https://healus.medcaremso.com/
 Description: Multi-Purpose Dashbaord Theme
-Version: YYYYMMDD.HHMM
+Version: 20221212.1100
 Text Domain: healus-medcaremso.com
 License: http://themeforest.net/licenses
 License URI: http://themeforest.net/licenses
@@ -12,7 +12,10 @@ License URI: http://themeforest.net/licenses
 /***************
     All custom CSS should be imported here
 ***************/
-/** Theme Root Px Value */
+/** Theme Direction Variables */
+/** Theme Direction */
+/** Theme Style Imports */
+/** Theme Global Utilities */ /** Theme Root Px Value */
 /** Theme Colors */
 /** Theme Colors Pallete */
 /** Theme Primary Colors */
@@ -23,51 +26,20 @@ License URI: http://themeforest.net/licenses
 /** Others */
 /** Theme Fonts */
 /* Poppins Font Family */
-@font-face {
-  font-family: "Poppins";
-  src: url("../../fonts/"), url("../../fonts/Poppins-SemiBold.eot");
-  src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url("../../fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../../fonts/Poppins-SemiBold.woff") format("woff"), url("../../fonts/Poppins-SemiBold.ttf") format("ttf"), url("../../fonts/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
-  font-weight: 600;
-  font-style: normal;
-  font-display: fallback;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../../fonts/Poppins-Medium.eot");
-  src: local("Poppins Medium"), local("Poppins-Medium"), url("../../fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Poppins-Medium.woff2") format("woff2"), url("../../fonts/Poppins-Medium.woff") format("woff"), url("../../fonts/Poppins-Medium.ttf") format("ttf"), url("../../fonts/Poppins-Medium.svg#Poppins-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: fallback;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../../fonts/Poppins-Regular.eot");
-  src: local("Poppins Regular"), local("Poppins-Regular"), url("../../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Poppins-Regular.woff2") format("woff2"), url("../../fonts/Poppins-Regular.ttf") format("ttf"), url("../../fonts/Poppins-Regular.woff") format("woff"), url("../../fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: fallback;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../../fonts/Poppins-Bold.eot");
-  src: local("Poppins Bold"), local("Poppins-Bold"), url("../../fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Poppins-Bold.woff2") format("woff2"), url("../../fonts/Poppins-Bold.woff") format("woff"), url("../../fonts/Poppins-Bold.ttf") format("ttf"), url("../../fonts/Poppins-Bold.svg#Poppins-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: fallback;
-}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic&display=swap");
 .m-auto {
   margin: auto;
 }
 
-.m-r-auto {
-  margin-right: auto;
-}
-
-.m-l-auto {
+.m-e-auto {
   margin-left: auto;
 }
 
-.m-lr-auto {
+.m-s-auto {
+  margin-right: auto;
+}
+
+.m-se-auto {
   margin: 0 auto;
 }
 
@@ -99,28 +71,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 0px !important;
 }
 
-.m-l-0 {
-  margin-left: 0px !important;
-}
-
-.p-l-0 {
-  padding-left: 0px !important;
-}
-
-.border-l-0 {
-  border-left: 0px !important;
-}
-
-.m-r-0 {
+.m-s-0 {
   margin-right: 0px !important;
 }
 
-.p-r-0 {
+.p-s-0 {
   padding-right: 0px !important;
 }
 
-.border-r-0 {
+.border-s-0 {
   border-right: 0px !important;
+}
+
+.m-e-0 {
+  margin-left: 0px !important;
+}
+
+.p-e-0 {
+  padding-left: 0px !important;
+}
+
+.border-e-0 {
+  border-left: 0px !important;
 }
 
 .cust-mar-0 {
@@ -163,28 +135,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 5px !important;
 }
 
-.m-l-5 {
-  margin-left: 5px !important;
-}
-
-.p-l-5 {
-  padding-left: 5px !important;
-}
-
-.border-l-5 {
-  border-left: 5px !important;
-}
-
-.m-r-5 {
+.m-s-5 {
   margin-right: 5px !important;
 }
 
-.p-r-5 {
+.p-s-5 {
   padding-right: 5px !important;
 }
 
-.border-r-5 {
+.border-s-5 {
   border-right: 5px !important;
+}
+
+.m-e-5 {
+  margin-left: 5px !important;
+}
+
+.p-e-5 {
+  padding-left: 5px !important;
+}
+
+.border-e-5 {
+  border-left: 5px !important;
 }
 
 .cust-mar-5 {
@@ -227,28 +199,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 10px !important;
 }
 
-.m-l-10 {
-  margin-left: 10px !important;
-}
-
-.p-l-10 {
-  padding-left: 10px !important;
-}
-
-.border-l-10 {
-  border-left: 10px !important;
-}
-
-.m-r-10 {
+.m-s-10 {
   margin-right: 10px !important;
 }
 
-.p-r-10 {
+.p-s-10 {
   padding-right: 10px !important;
 }
 
-.border-r-10 {
+.border-s-10 {
   border-right: 10px !important;
+}
+
+.m-e-10 {
+  margin-left: 10px !important;
+}
+
+.p-e-10 {
+  padding-left: 10px !important;
+}
+
+.border-e-10 {
+  border-left: 10px !important;
 }
 
 .cust-mar-10 {
@@ -291,28 +263,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 15px !important;
 }
 
-.m-l-15 {
-  margin-left: 15px !important;
-}
-
-.p-l-15 {
-  padding-left: 15px !important;
-}
-
-.border-l-15 {
-  border-left: 15px !important;
-}
-
-.m-r-15 {
+.m-s-15 {
   margin-right: 15px !important;
 }
 
-.p-r-15 {
+.p-s-15 {
   padding-right: 15px !important;
 }
 
-.border-r-15 {
+.border-s-15 {
   border-right: 15px !important;
+}
+
+.m-e-15 {
+  margin-left: 15px !important;
+}
+
+.p-e-15 {
+  padding-left: 15px !important;
+}
+
+.border-e-15 {
+  border-left: 15px !important;
 }
 
 .cust-mar-15 {
@@ -355,28 +327,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 20px !important;
 }
 
-.m-l-20 {
-  margin-left: 20px !important;
-}
-
-.p-l-20 {
-  padding-left: 20px !important;
-}
-
-.border-l-20 {
-  border-left: 20px !important;
-}
-
-.m-r-20 {
+.m-s-20 {
   margin-right: 20px !important;
 }
 
-.p-r-20 {
+.p-s-20 {
   padding-right: 20px !important;
 }
 
-.border-r-20 {
+.border-s-20 {
   border-right: 20px !important;
+}
+
+.m-e-20 {
+  margin-left: 20px !important;
+}
+
+.p-e-20 {
+  padding-left: 20px !important;
+}
+
+.border-e-20 {
+  border-left: 20px !important;
 }
 
 .cust-mar-20 {
@@ -419,28 +391,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 25px !important;
 }
 
-.m-l-25 {
-  margin-left: 25px !important;
-}
-
-.p-l-25 {
-  padding-left: 25px !important;
-}
-
-.border-l-25 {
-  border-left: 25px !important;
-}
-
-.m-r-25 {
+.m-s-25 {
   margin-right: 25px !important;
 }
 
-.p-r-25 {
+.p-s-25 {
   padding-right: 25px !important;
 }
 
-.border-r-25 {
+.border-s-25 {
   border-right: 25px !important;
+}
+
+.m-e-25 {
+  margin-left: 25px !important;
+}
+
+.p-e-25 {
+  padding-left: 25px !important;
+}
+
+.border-e-25 {
+  border-left: 25px !important;
 }
 
 .cust-mar-25 {
@@ -483,28 +455,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 30px !important;
 }
 
-.m-l-30 {
-  margin-left: 30px !important;
-}
-
-.p-l-30 {
-  padding-left: 30px !important;
-}
-
-.border-l-30 {
-  border-left: 30px !important;
-}
-
-.m-r-30 {
+.m-s-30 {
   margin-right: 30px !important;
 }
 
-.p-r-30 {
+.p-s-30 {
   padding-right: 30px !important;
 }
 
-.border-r-30 {
+.border-s-30 {
   border-right: 30px !important;
+}
+
+.m-e-30 {
+  margin-left: 30px !important;
+}
+
+.p-e-30 {
+  padding-left: 30px !important;
+}
+
+.border-e-30 {
+  border-left: 30px !important;
 }
 
 .cust-mar-30 {
@@ -547,28 +519,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 35px !important;
 }
 
-.m-l-35 {
-  margin-left: 35px !important;
-}
-
-.p-l-35 {
-  padding-left: 35px !important;
-}
-
-.border-l-35 {
-  border-left: 35px !important;
-}
-
-.m-r-35 {
+.m-s-35 {
   margin-right: 35px !important;
 }
 
-.p-r-35 {
+.p-s-35 {
   padding-right: 35px !important;
 }
 
-.border-r-35 {
+.border-s-35 {
   border-right: 35px !important;
+}
+
+.m-e-35 {
+  margin-left: 35px !important;
+}
+
+.p-e-35 {
+  padding-left: 35px !important;
+}
+
+.border-e-35 {
+  border-left: 35px !important;
 }
 
 .cust-mar-35 {
@@ -611,28 +583,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 40px !important;
 }
 
-.m-l-40 {
-  margin-left: 40px !important;
-}
-
-.p-l-40 {
-  padding-left: 40px !important;
-}
-
-.border-l-40 {
-  border-left: 40px !important;
-}
-
-.m-r-40 {
+.m-s-40 {
   margin-right: 40px !important;
 }
 
-.p-r-40 {
+.p-s-40 {
   padding-right: 40px !important;
 }
 
-.border-r-40 {
+.border-s-40 {
   border-right: 40px !important;
+}
+
+.m-e-40 {
+  margin-left: 40px !important;
+}
+
+.p-e-40 {
+  padding-left: 40px !important;
+}
+
+.border-e-40 {
+  border-left: 40px !important;
 }
 
 .cust-mar-40 {
@@ -675,28 +647,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 45px !important;
 }
 
-.m-l-45 {
-  margin-left: 45px !important;
-}
-
-.p-l-45 {
-  padding-left: 45px !important;
-}
-
-.border-l-45 {
-  border-left: 45px !important;
-}
-
-.m-r-45 {
+.m-s-45 {
   margin-right: 45px !important;
 }
 
-.p-r-45 {
+.p-s-45 {
   padding-right: 45px !important;
 }
 
-.border-r-45 {
+.border-s-45 {
   border-right: 45px !important;
+}
+
+.m-e-45 {
+  margin-left: 45px !important;
+}
+
+.p-e-45 {
+  padding-left: 45px !important;
+}
+
+.border-e-45 {
+  border-left: 45px !important;
 }
 
 .cust-mar-45 {
@@ -739,28 +711,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 50px !important;
 }
 
-.m-l-50 {
-  margin-left: 50px !important;
-}
-
-.p-l-50 {
-  padding-left: 50px !important;
-}
-
-.border-l-50 {
-  border-left: 50px !important;
-}
-
-.m-r-50 {
+.m-s-50 {
   margin-right: 50px !important;
 }
 
-.p-r-50 {
+.p-s-50 {
   padding-right: 50px !important;
 }
 
-.border-r-50 {
+.border-s-50 {
   border-right: 50px !important;
+}
+
+.m-e-50 {
+  margin-left: 50px !important;
+}
+
+.p-e-50 {
+  padding-left: 50px !important;
+}
+
+.border-e-50 {
+  border-left: 50px !important;
 }
 
 .cust-mar-50 {
@@ -803,28 +775,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 55px !important;
 }
 
-.m-l-55 {
-  margin-left: 55px !important;
-}
-
-.p-l-55 {
-  padding-left: 55px !important;
-}
-
-.border-l-55 {
-  border-left: 55px !important;
-}
-
-.m-r-55 {
+.m-s-55 {
   margin-right: 55px !important;
 }
 
-.p-r-55 {
+.p-s-55 {
   padding-right: 55px !important;
 }
 
-.border-r-55 {
+.border-s-55 {
   border-right: 55px !important;
+}
+
+.m-e-55 {
+  margin-left: 55px !important;
+}
+
+.p-e-55 {
+  padding-left: 55px !important;
+}
+
+.border-e-55 {
+  border-left: 55px !important;
 }
 
 .cust-mar-55 {
@@ -867,28 +839,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 60px !important;
 }
 
-.m-l-60 {
-  margin-left: 60px !important;
-}
-
-.p-l-60 {
-  padding-left: 60px !important;
-}
-
-.border-l-60 {
-  border-left: 60px !important;
-}
-
-.m-r-60 {
+.m-s-60 {
   margin-right: 60px !important;
 }
 
-.p-r-60 {
+.p-s-60 {
   padding-right: 60px !important;
 }
 
-.border-r-60 {
+.border-s-60 {
   border-right: 60px !important;
+}
+
+.m-e-60 {
+  margin-left: 60px !important;
+}
+
+.p-e-60 {
+  padding-left: 60px !important;
+}
+
+.border-e-60 {
+  border-left: 60px !important;
 }
 
 .cust-mar-60 {
@@ -931,28 +903,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 65px !important;
 }
 
-.m-l-65 {
-  margin-left: 65px !important;
-}
-
-.p-l-65 {
-  padding-left: 65px !important;
-}
-
-.border-l-65 {
-  border-left: 65px !important;
-}
-
-.m-r-65 {
+.m-s-65 {
   margin-right: 65px !important;
 }
 
-.p-r-65 {
+.p-s-65 {
   padding-right: 65px !important;
 }
 
-.border-r-65 {
+.border-s-65 {
   border-right: 65px !important;
+}
+
+.m-e-65 {
+  margin-left: 65px !important;
+}
+
+.p-e-65 {
+  padding-left: 65px !important;
+}
+
+.border-e-65 {
+  border-left: 65px !important;
 }
 
 .cust-mar-65 {
@@ -995,28 +967,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 70px !important;
 }
 
-.m-l-70 {
-  margin-left: 70px !important;
-}
-
-.p-l-70 {
-  padding-left: 70px !important;
-}
-
-.border-l-70 {
-  border-left: 70px !important;
-}
-
-.m-r-70 {
+.m-s-70 {
   margin-right: 70px !important;
 }
 
-.p-r-70 {
+.p-s-70 {
   padding-right: 70px !important;
 }
 
-.border-r-70 {
+.border-s-70 {
   border-right: 70px !important;
+}
+
+.m-e-70 {
+  margin-left: 70px !important;
+}
+
+.p-e-70 {
+  padding-left: 70px !important;
+}
+
+.border-e-70 {
+  border-left: 70px !important;
 }
 
 .cust-mar-70 {
@@ -1059,28 +1031,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 75px !important;
 }
 
-.m-l-75 {
-  margin-left: 75px !important;
-}
-
-.p-l-75 {
-  padding-left: 75px !important;
-}
-
-.border-l-75 {
-  border-left: 75px !important;
-}
-
-.m-r-75 {
+.m-s-75 {
   margin-right: 75px !important;
 }
 
-.p-r-75 {
+.p-s-75 {
   padding-right: 75px !important;
 }
 
-.border-r-75 {
+.border-s-75 {
   border-right: 75px !important;
+}
+
+.m-e-75 {
+  margin-left: 75px !important;
+}
+
+.p-e-75 {
+  padding-left: 75px !important;
+}
+
+.border-e-75 {
+  border-left: 75px !important;
 }
 
 .cust-mar-75 {
@@ -1123,28 +1095,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 80px !important;
 }
 
-.m-l-80 {
-  margin-left: 80px !important;
-}
-
-.p-l-80 {
-  padding-left: 80px !important;
-}
-
-.border-l-80 {
-  border-left: 80px !important;
-}
-
-.m-r-80 {
+.m-s-80 {
   margin-right: 80px !important;
 }
 
-.p-r-80 {
+.p-s-80 {
   padding-right: 80px !important;
 }
 
-.border-r-80 {
+.border-s-80 {
   border-right: 80px !important;
+}
+
+.m-e-80 {
+  margin-left: 80px !important;
+}
+
+.p-e-80 {
+  padding-left: 80px !important;
+}
+
+.border-e-80 {
+  border-left: 80px !important;
 }
 
 .cust-mar-80 {
@@ -1187,28 +1159,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 85px !important;
 }
 
-.m-l-85 {
-  margin-left: 85px !important;
-}
-
-.p-l-85 {
-  padding-left: 85px !important;
-}
-
-.border-l-85 {
-  border-left: 85px !important;
-}
-
-.m-r-85 {
+.m-s-85 {
   margin-right: 85px !important;
 }
 
-.p-r-85 {
+.p-s-85 {
   padding-right: 85px !important;
 }
 
-.border-r-85 {
+.border-s-85 {
   border-right: 85px !important;
+}
+
+.m-e-85 {
+  margin-left: 85px !important;
+}
+
+.p-e-85 {
+  padding-left: 85px !important;
+}
+
+.border-e-85 {
+  border-left: 85px !important;
 }
 
 .cust-mar-85 {
@@ -1251,28 +1223,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 90px !important;
 }
 
-.m-l-90 {
-  margin-left: 90px !important;
-}
-
-.p-l-90 {
-  padding-left: 90px !important;
-}
-
-.border-l-90 {
-  border-left: 90px !important;
-}
-
-.m-r-90 {
+.m-s-90 {
   margin-right: 90px !important;
 }
 
-.p-r-90 {
+.p-s-90 {
   padding-right: 90px !important;
 }
 
-.border-r-90 {
+.border-s-90 {
   border-right: 90px !important;
+}
+
+.m-e-90 {
+  margin-left: 90px !important;
+}
+
+.p-e-90 {
+  padding-left: 90px !important;
+}
+
+.border-e-90 {
+  border-left: 90px !important;
 }
 
 .cust-mar-90 {
@@ -1315,28 +1287,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 95px !important;
 }
 
-.m-l-95 {
-  margin-left: 95px !important;
-}
-
-.p-l-95 {
-  padding-left: 95px !important;
-}
-
-.border-l-95 {
-  border-left: 95px !important;
-}
-
-.m-r-95 {
+.m-s-95 {
   margin-right: 95px !important;
 }
 
-.p-r-95 {
+.p-s-95 {
   padding-right: 95px !important;
 }
 
-.border-r-95 {
+.border-s-95 {
   border-right: 95px !important;
+}
+
+.m-e-95 {
+  margin-left: 95px !important;
+}
+
+.p-e-95 {
+  padding-left: 95px !important;
+}
+
+.border-e-95 {
+  border-left: 95px !important;
 }
 
 .cust-mar-95 {
@@ -1379,28 +1351,28 @@ License URI: http://themeforest.net/licenses
   border-bottom: 100px !important;
 }
 
-.m-l-100 {
-  margin-left: 100px !important;
-}
-
-.p-l-100 {
-  padding-left: 100px !important;
-}
-
-.border-l-100 {
-  border-left: 100px !important;
-}
-
-.m-r-100 {
+.m-s-100 {
   margin-right: 100px !important;
 }
 
-.p-r-100 {
+.p-s-100 {
   padding-right: 100px !important;
 }
 
-.border-r-100 {
+.border-s-100 {
   border-right: 100px !important;
+}
+
+.m-e-100 {
+  margin-left: 100px !important;
+}
+
+.p-e-100 {
+  padding-left: 100px !important;
+}
+
+.border-e-100 {
+  border-left: 100px !important;
 }
 
 .cust-mar-100 {
@@ -1435,38 +1407,37 @@ License URI: http://themeforest.net/licenses
   position: absolute !important;
 }
 
-@-webkit-keyframes bounce {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    -webkit-transform: translate3d(0, 30px, 0);
-    transform: translate3d(0, 30px, 0);
-    -moz-transform: translate3d(0, 30px, 0);
-    -ms-transform: translate3d(0, 30px, 0);
-    -o-transform: translate3d(0, 30px, 0);
-  }
+/*   =====================================
+     MedCare MSO Icons classes
+=====================================    */
+.msoi {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.5rem;
+  position: relative;
+  display: inline-block;
 }
-@keyframes bounce {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    -webkit-transform: translate3d(0, 30px, 0);
-    transform: translate3d(0, 30px, 0);
-    -moz-transform: translate3d(0, 30px, 0);
-    -ms-transform: translate3d(0, 30px, 0);
-    -o-transform: translate3d(0, 30px, 0);
-  }
+.msoi::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
+.msoi-magnifying-glass::before {
+  background-image: url("./icons/magnifying-glass.svg");
+}
+
+/** Theme Global Components */
 img.lazyloading,
 img.lazy.loading {
   height: auto;
   min-height: 100%;
   background: #f6f7f8;
-  background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-image: linear-gradient(to left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
   background-repeat: no-repeat;
   background-size: cover;
   display: inline-block;
@@ -1507,8 +1478,8 @@ img.lazy.loading {
 /*********************************************************/
 .pagination--section {
   position: fixed;
-  left: 0;
-  right: 0;
+  app-left: 0;
+  app-right: 0;
   top: 0;
   z-index: 50;
   padding: 0;
@@ -1517,11 +1488,11 @@ img.lazy.loading {
 .pagination--list {
   position: absolute;
   list-style: none;
-  right: 0;
+  app-right: 0;
   top: auto;
   bottom: auto;
   margin: auto;
-  left: auto;
+  app-left: auto;
   height: auto;
   display: -o-flex;
   display: -moz-flex;
@@ -1589,13 +1560,13 @@ img.lazy.loading {
   line-height: 1.5;
   font-weight: 600;
   color: #fff;
-  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
   background-color: #9bcba2;
   border: 1px solid;
   float: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 25px;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
   -webkit-transition: 200ms ease-in-out;
   -moz-transition: 200ms ease-in-out;
   -ms-transition: 200ms ease-in-out;
@@ -1653,7 +1624,7 @@ img.lazy.loading {
   margin: 6.35rem auto 0;
   display: table;
   border: 1px solid #000;
-  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -1665,7 +1636,7 @@ img.lazy.loading {
   height: 3.5rem;
   position: absolute;
   top: -4.5rem;
-  right: 0;
+  app-right: 0;
   color: #fff;
   border-radius: 50%;
   background-color: #19ac2c;
@@ -1757,6 +1728,68 @@ img.lazy.loading {
 }
 
 /*  =====================================
+    Dropdown Configuration
+=====================================   */
+.dropdown-item {
+  padding: 0;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #000;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-weight: normal;
+  text-align: right;
+  letter-spacing: 0.2px;
+  line-height: 1.5rem;
+  display: block;
+  max-width: max-content;
+}
+@media screen and (min-width: 1200px) {
+  .dropdown-item {
+    font-size: 1.125rem;
+  }
+}
+.dropdown-item i {
+  line-height: inherit;
+}
+.dropdown-item:hover, .dropdown-item.active, .dropdown-item:active {
+  background-color: transparent;
+  border-bottom: none;
+}
+
+.dropdown-menu {
+  min-width: 15rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-align: right;
+  box-shadow: 0px 3px 114px rgba(15, 27, 82, 0.2);
+}
+.dropdown-menu i {
+  color: #0f1b52;
+  position: absolute;
+  top: -12px;
+  right: 12px;
+  background-color: #fff;
+}
+
+.show {
+  display: block;
+}
+
+/* =================================
+   Theme Dropdowns Customizations 
+====================================*/
+.dropdown__profile .dropdown-toggle {
+  padding: 0;
+}
+.dropdown__profile .dropdown-toggle .img-thumbnail {
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+}
+
+/*  =====================================
     Custom Accordian Card Configuration
 =====================================   */
 .accordion .card-header {
@@ -1778,9 +1811,9 @@ img.lazy.loading {
 .accordion .card [class*=btn-] {
   border: none;
   white-space: normal;
-  text-align: left;
+  text-align: right;
   width: 100%;
-  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
   line-height: 1.3;
   letter-spacing: 0.8px;
   padding: 0.6rem 1rem;
@@ -1805,9 +1838,9 @@ img.lazy.loading {
 .modal {
   position: fixed;
   top: 0;
-  right: 0;
+  app-right: 0;
   bottom: 0;
-  left: 0;
+  app-left: 0;
   z-index: 1050;
   display: none;
   overflow: hidden;
@@ -1902,7 +1935,7 @@ img.lazy.loading {
 .modal-title {
   margin-bottom: 0;
   line-height: 1;
-  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
   font-size: 2rem;
   letter-spacing: 0;
   color: #262626;
@@ -1927,6 +1960,173 @@ img.lazy.loading {
   border-top: 1px solid #e9ecef;
 }
 
+/*  =====================================
+    Form Configuration
+=====================================   */
+form.custom-form {
+  margin: 1.25rem auto;
+}
+form.custom-form a[type=submit] {
+  padding: 1rem 2rem;
+  -webkit-appearance: inherit;
+}
+form.custom-form .form-group {
+  position: relative;
+}
+form.custom-form .form-control {
+  height: auto;
+  padding: 1.0625rem 1.375rem;
+  font-size: 0.875rem;
+  font-family: "Noto Sans Arabic", sans-serif;
+  letter-spacing: 0;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  background-color: #f2efe8;
+  color: rgb(0, 0, 0);
+}
+form.custom-form .form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(0, 0, 0, 0.3);
+}
+form.custom-form .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(0, 0, 0, 0.3);
+}
+form.custom-form .form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: rgba(0, 0, 0, 0.3);
+}
+form.custom-form .form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(0, 0, 0, 0.3);
+}
+form.custom-form label {
+  text-align: right;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.7px;
+  color: #262626;
+  opacity: 1;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+}
+form.custom-form select {
+  text-indent: 1px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  text-overflow: ellipsis;
+  background-image: url(http://cdn2.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png);
+  background-repeat: no-repeat;
+  background-size: 0.8rem;
+  background-position: calc(100% - 1.375rem) center;
+}
+form.custom-form .form-text {
+  text-align: right;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.7px;
+  opacity: 1;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+}
+form.custom-form .custom-checkbox.show-password {
+  padding-right: 2rem;
+}
+form.custom-form .custom-checkbox.show-password .checkmark {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+form.custom-form .custom-checkbox.show-password .checkmark i {
+  font-size: 0.75rem;
+}
+form.custom-form .custom-checkbox.transport-type {
+  height: 5rem;
+  padding-right: 5rem;
+}
+
+.noresize {
+  resize: none;
+}
+
+.vresize {
+  resize: vertical;
+}
+
+.hresize {
+  resize: horizontal;
+}
+
+/*  =====================================
+    Form Elements
+=====================================   */
+input {
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  color: #9bcba2;
+}
+input::placeholder {
+  color: #e8eff4;
+}
+input.form-control {
+  padding: 0.8125rem 0.875rem;
+  border-radius: 0.5rem;
+}
+/*  =====================================
+    Form Control with Floating Icon
+=====================================   */
+.form-floating-icon {
+  position: relative;
+}
+.form-floating-icon .form-control {
+  border: 1px solid transparent;
+}
+.form-floating-icon > label {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
+  padding: 0.8125rem 0.875rem;
+  overflow: hidden;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  opacity: 0.45;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  text-align: right;
+}
+.form-floating-icon > .form-control-plaintext ~ label, .form-floating-icon > .form-control:focus ~ label, .form-floating-icon > .form-control:not(:placeholder-shown) ~ label, .form-floating-icon > .form-select ~ label {
+  opacity: 1;
+  right: auto;
+  left: 0;
+}
+.form-floating-icon > .form-control-plaintext, .form-floating-icon > .form-control, .form-floating-icon > .form-select {
+  padding-right: 3rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.form-floating-icon > .form-control-plaintext:focus, .form-floating-icon > .form-control:focus, .form-floating-icon > .form-select:focus {
+  padding-right: 0.875rem;
+}
+
+/** Theme Global Stylesheet */
 /* Theme Global Style Overrides */
 html {
   background-color: #fff;
@@ -1934,7 +2134,7 @@ html {
 
 body {
   background-color: #fafaff;
-  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
   position: relative;
   overflow: inherit;
   scroll-behavior: smooth;
@@ -1980,7 +2180,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
   color: #0f1b52;
   cursor: default;
   margin-bottom: 10px;
@@ -2068,7 +2268,7 @@ ol,
 ul,
 p {
   cursor: default;
-  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
   font-weight: 300;
   font-size: 0.875rem;
   line-height: 1.33;
@@ -2085,7 +2285,7 @@ p {
 
 ol,
 ul {
-  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 p strong {
@@ -2105,7 +2305,7 @@ a:hover, a:focus, a:active {
 }
 
 small {
-  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 0.625rem;
@@ -2195,7 +2395,7 @@ blockquote {
 }
 
 .font-light {
-  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+  font-family: "Noto Sans Arabic", sans-serif;
   font-weight: 100;
 }
 
@@ -2229,27 +2429,12 @@ blockquote {
 }
 
 /*  =====================================
-    Form Elements
-=====================================   */
-input {
-  font-family: "Poppins", "Helvetica", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.125rem;
-  line-height: 1.25;
-  color: #9bcba2;
-}
-input::placeholder {
-  color: #e8eff4;
-}
-
-/*  =====================================
     Swiper (Carousel) Configuration
 =====================================   */
 .swiper-container {
   width: 100%;
   height: 400px;
-  background-position: right center;
+  background-position: left center;
   background-repeat: no-repeat;
   background-size: 80%;
 }
@@ -2304,4 +2489,175 @@ article.page {
 }
 article.page a {
   text-decoration: underline !important;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/** Theme Global Header */
+header.header-main .form__search-patients {
+  width: 28.4375rem;
+}
+header.header-main .form__search-patients .form-floating-icon {
+  width: 100%;
+}
+header.header-main .form__search-patients .form-control.search-patients {
+  background-color: #e8eff4;
+  width: 100%;
+}
+
+/** theme login page style */
+.login-page-main {
+  background: #fff;
+}
+.login-page-main .login-container {
+  height: 100%;
+}
+@media screen and (min-width: 992px) {
+  .login-page-main .login-container {
+    height: 100%;
+  }
+}
+.login-page-main a {
+  color: #0078ff !important;
+}
+.login-page-main .login-poster {
+  height: 100vh;
+  padding: 30px;
+  background-color: #9bcba2;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (min-width: 769px) {
+  .login-page-main .login-poster {
+    height: 30vh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .login-page-main .login-poster {
+    height: 100vh;
+  }
+}
+.login-page-main .login-poster .bg-logo {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100%;
+  top: -50%;
+  app-left: -50%;
+  background-image: url("../../../resources/img/loginimg.svg");
+  -moz-transform: translate3d(-49%, -10%, 0) rotate(135deg);
+  -webkit-transform: translate3d(-49%, -10%, 0) rotate(135deg);
+  -o-transform: translate3d(-49%, -10%, 0) rotate(135deg);
+  -ms-transform: translate3d(-49%, -10%, 0) rotate(135deg);
+  transform: translate3d(-49%, -10%, 0) rotate(135deg);
+  background-size: 35%;
+  z-index: 2;
+  background-repeat: repeat-x;
+  background-position: top;
+}
+@media screen and (min-width: 769px) {
+  .login-page-main .login-poster .bg-logo {
+    -moz-transform: translate3d(2%, -15%, 0) rotate(135deg);
+    -webkit-transform: translate3d(2%, -15%, 0) rotate(135deg);
+    -o-transform: translate3d(2%, -15%, 0) rotate(135deg);
+    -ms-transform: translate3d(2%, -15%, 0) rotate(135deg);
+    transform: translate3d(2%, -15%, 0) rotate(135deg);
+    background-size: 35%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .login-page-main .login-poster .bg-logo {
+    -moz-transform: translate3d(-57%, -8%, 0) rotate(135deg);
+    -webkit-transform: translate3d(-57%, -8%, 0) rotate(135deg);
+    -o-transform: translate3d(-57%, -8%, 0) rotate(135deg);
+    -ms-transform: translate3d(-57%, -8%, 0) rotate(135deg);
+    transform: translate3d(-57%, -8%, 0) rotate(135deg);
+    background-size: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .login-page-main .login-poster .bg-logo {
+    -moz-transform: translate3d(-34%, 9%, 0) rotate(135deg);
+    -webkit-transform: translate3d(-34%, 9%, 0) rotate(135deg);
+    -o-transform: translate3d(-34%, 9%, 0) rotate(135deg);
+    -ms-transform: translate3d(-34%, 9%, 0) rotate(135deg);
+    transform: translate3d(-34%, 9%, 0) rotate(135deg);
+    background-size: 70%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .login-page-main .login-poster .bg-logo {
+    -moz-transform: translate3d(-31%, 18%, 0) rotate(135deg);
+    -webkit-transform: translate3d(-31%, 18%, 0) rotate(135deg);
+    -o-transform: translate3d(-31%, 18%, 0) rotate(135deg);
+    -ms-transform: translate3d(-31%, 18%, 0) rotate(135deg);
+    transform: translate3d(-31%, 18%, 0) rotate(135deg);
+    background-size: 80%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .login-page-main .login-poster .bg-logo {
+    -moz-transform: translate3d(-16%, 14%, 0) rotate(135deg);
+    -webkit-transform: translate3d(-16%, 14%, 0) rotate(135deg);
+    -o-transform: translate3d(-16%, 14%, 0) rotate(135deg);
+    -ms-transform: translate3d(-16%, 14%, 0) rotate(135deg);
+    transform: translate3d(-16%, 14%, 0) rotate(135deg);
+    background-size: initial;
+  }
+}
+.login-page-main .login-poster .login-poster_logo {
+  z-index: 2;
+}
+.login-page-main .login-form {
+  padding: 30px;
+}
+.login-page-main .login-form .createaccount {
+  font-size: 16px;
+  color: #737373;
+}
+.login-page-main .login-form .form-title {
+  font-weight: 600;
+  font-size: 2.8125rem;
+  color: #000;
+}
+.login-page-main .login-form .form-subtitle {
+  font-size: 16px;
+  color: #737373;
+}
+.login-page-main .login-form .form-control {
+  border: 1px solid #e3e9fa;
+  border-radius: 3px;
+  height: 50px;
+}
+.login-page-main .login-form .form-control:focus {
+  border-color: #9bcba2 !important;
+  box-shadow: none;
+}
+.login-page-main .login-form label {
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.login-page-main .login-form .forgot-pass {
+  font-weight: 500;
+  font-size: 16px;
+  color: #0078ff;
+}
+.login-page-main .login-form .contact-admin {
+  font-size: 1rem;
+}
+.login-page-main .validate .bg-logo {
+  background-image: url("../../../resources/img/dark-bg.svg") !important;
+}
+.login-page-main .required {
+  color: red;
+  font-size: 14px;
+}
+.login-page-main .errormsg {
+  color: red;
+}
+.login-page-main .h-100vh {
+  height: 100vh;
+}
+
+.form-check {
+  display: none;
+}/*# sourceMappingURL=style-rtl.css.map */

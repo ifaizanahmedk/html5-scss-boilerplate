@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" dir="ltr"> <!--<![endif]-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1 ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document Name | Product Name </title>
+
+        <!-- Meta tags to be used for SEO purpose -->
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="MedCareMSO Development Team">
+
+        <!-- Meta tags to display cards whenever link is shared to any social platform or website -->
+        <!-- Open Graph Meta Data -->
+        <meta property="og:title" content="">
+        <meta property="og:type" content="">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+
+        <meta name="twitter:card" content="">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
+
+        <link rel="manifest" href="../site.webmanifest">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" href="imgs/favicon.png">
+        <link rel="icon" href="/favicon.png" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" sizes="any">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+        <!-- Normalize CSS -->
+        <!-- <link rel="stylesheet" href="./resources/css/normalize.css"> -->
+        <link rel="stylesheet" href="../resources/css/default.css">
+        <link rel="stylesheet" href="../resources/css/main.css">
+
+        <meta name="theme-color" content="#A4CFAB">
+
+        <!-- Bundles CSS only -->
+        <!-- Bootstrap RTL  -->
+        <!-- <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css"
+            integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU"
+            crossorigin="anonymous"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous">
+
+        <!-- Custom/Theme Style Sheets Only -->
+        <!-- <link rel="stylesheet" href='../resources/scss/style-rtl.css'> -->
+        <link rel="stylesheet" href='../resources/scss/style.css'>
+
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
+        <![endif]-->
+    </head>
+    <!--[if lt IE 8]> <p class="browsehappy">You are using an <strong>outdated</strong> browser. 
+        Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    <body class="">
+        <header class="header-main">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand me-lg-5" href="#">
+                        <img src="../resources/img/logo-healus.svg" alt="Heal US ">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        title="Navbar Toggler">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Heal Us</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body align-items-center">
+                            <form class="d-flex form__search-patients" role="search">
+                                <div class="form-floating-icon mb-3 mb-lg-0">
+                                    <input type="search" class="form-control search-patients"
+                                        id="formSearchPatients" name="form-search-patients"
+                                        placeholder="Search Patients">
+                                    <label for="formSearchPatients">
+                                        <i class="msoi msoi-magnifying-glass"></i>
+                                    </label>
+                                </div>
+                            </form>
+                            <ul class="navbar-nav justify-content-end
+                                flex-grow-1 mt-3 mt-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active"
+                                        aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown dropdown__profile">
+                                    <a class="nav-link dropdown-toggle" href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img
+                                            src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png"
+                                            class="img-thumbnail" alt="User Profile">
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li>
+                                            <h5 class="card-title">Card title</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another
+                                                action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something
+                                                else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <div>
+                <nav></nav>
+            </div>
+        </section>
+
+
+        <main class="body-main">
+            <aside></aside>
+
+            <div class="main-content-wrapper">
+                <section class="section">
+                    <div class="container custom-container">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+
+        <!-- JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <!-- <script>
+            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview');
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+    </body>
+</html>

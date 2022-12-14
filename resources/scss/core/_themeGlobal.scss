@@ -1,74 +1,74 @@
 /* Theme Global Style Overrides */
 html {
-	background-color: $theme__color--light;
+    background-color: $theme__color--light;
 }
 
 body {
-	background-color: $theme__color--light5;
-	font-family: $theme__primary-font--poppins;
-	position: relative;
-	overflow: inherit;
-	scroll-behavior: smooth;
-	margin: 0;
-	counter-reset: apply-steps;
+    background-color: $theme__color--light5;
+    font-family: $theme__primary-font;
+    position: relative;
+    overflow: inherit;
+    scroll-behavior: smooth;
+    margin: 0;
+    counter-reset: apply-steps;
 
-	&::-webkit-scrollbar-track {
-		@include box-shadow(inset 0 0 6px rgba(0, 0, 0, 0.1));
-		background-color: $theme__color--light3;
-		display: none;
-	}
+    &::-webkit-scrollbar-track {
+        @include box-shadow(inset 0 0 6px rgba(0, 0, 0, 0.1));
+        background-color: $theme__color--light3;
+        display: none;
+    }
 
-	&::-webkit-scrollbar {
-		width: 0.75rem;
-		height: 0.75rem;
-		background-color: $grey3;
-		display: none;
-	}
+    &::-webkit-scrollbar {
+        width: 0.75rem;
+        height: 0.75rem;
+        background-color: $grey3;
+        display: none;
+    }
 
-	&::-webkit-scrollbar-thumb {
-		background-color: $theme__color--light;
-		background-image: -webkit-gradient(
-			linear,
-			40% 0%,
-			75% 84%,
-			from($yellow),
-			to($yellow),
-			color-stop(0.6, $theme__color--dark3)
-		);
-		cursor: pointer;
-		display: none;
-	}
+    &::-webkit-scrollbar-thumb {
+        background-color: $theme__color--light;
+        background-image: -webkit-gradient(
+            linear,
+            40% 0%,
+            75% 84%,
+            from($yellow),
+            to($yellow),
+            color-stop(0.6, $theme__color--dark3)
+        );
+        cursor: pointer;
+        display: none;
+    }
 
-	//&::before {
-	//  content: '';
-	//  position: absolute;
-	//  display: block;
-	//  width: 100%;
-	//  height: 50px;
-	//  top: 0;
-	//}
-	//
-	//&::after {
-	//  content: '';
-	//  position: absolute;
-	//  display: block;
-	//  width: 100%;
-	//  height: 50px;
-	//  bottom: 0;
-	//}
-	//
-	//&::before, &::after {
-	//  position: fixed;
-	//}
+    //&::before {
+    //  content: '';
+    //  position: absolute;
+    //  display: block;
+    //  width: 100%;
+    //  height: 50px;
+    //  top: 0;
+    //}
+    //
+    //&::after {
+    //  content: '';
+    //  position: absolute;
+    //  display: block;
+    //  width: 100%;
+    //  height: 50px;
+    //  bottom: 0;
+    //}
+    //
+    //&::before, &::after {
+    //  position: fixed;
+    //}
 }
 
 body.overflow {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .page,
 .page #main {
-	background-color: $theme__color--light;
+    background-color: $theme__color--light;
 }
 
 /*  =====================================
@@ -80,180 +80,180 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $theme__primary-font--poppins;
-	color: $theme__text-description;
-	cursor: default;
-	margin-bottom: 10px;
+    font-family: $theme__primary-font;
+    color: $theme__text-description;
+    cursor: default;
+    margin-bottom: 10px;
 }
 
 h1 {
-	font-style: normal;
-	font-weight: 500;
-	font-size: px-to-rem(36);
-	line-height: 1.25;
-	margin-bottom: px-to-rem(20);
+    font-style: normal;
+    font-weight: 500;
+    font-size: px-to-rem(36);
+    line-height: 1.25;
+    margin-bottom: px-to-rem(20);
 
-	@media only screen and (min-width: $phone) {
-		font-size: px-to-rem(48);
-	}
+    @media only screen and (min-width: $phone) {
+        font-size: px-to-rem(48);
+    }
 }
 
 h2 {
-	font-style: normal;
-	font-weight: 500;
-	font-size: px-to-rem(30);
-	line-height: 1.25;
+    font-style: normal;
+    font-weight: 500;
+    font-size: px-to-rem(30);
+    line-height: 1.25;
 
-	position: relative;
-	color: $green;
-	letter-spacing: 1.2px;
-	margin: px-to-rem(45) 0 px-to-rem(20);
+    position: relative;
+    color: $green;
+    letter-spacing: 1.2px;
+    margin: px-to-rem(45) 0 px-to-rem(20);
 
-	@media only screen and (min-width: $phone) {
-		font-size: px-to-rem(40);
-	}
+    @media only screen and (min-width: $phone) {
+        font-size: px-to-rem(40);
+    }
 }
 
 h3 {
-	font-style: normal;
-	font-weight: 300;
-	font-size: px-to-rem(24);
-	line-height: 1.375;
+    font-style: normal;
+    font-weight: 300;
+    font-size: px-to-rem(24);
+    line-height: 1.375;
 
-	@media only screen and (min-width: $phone) {
-		font-size: px-to-rem(32);
-	}
+    @media only screen and (min-width: $phone) {
+        font-size: px-to-rem(32);
+    }
 }
 
 h4 {
-	font-style: normal;
-	font-weight: 700;
-	font-size: px-to-rem(20);
-	line-height: 1.5;
+    font-style: normal;
+    font-weight: 700;
+    font-size: px-to-rem(20);
+    line-height: 1.5;
 
-	text-transform: uppercase;
+    text-transform: uppercase;
 
-	@media only screen and (min-width: $phone) {
-		font-size: px-to-rem(24);
-	}
+    @media only screen and (min-width: $phone) {
+        font-size: px-to-rem(24);
+    }
 }
 
 h5 {
-	font-style: normal;
-	font-weight: 700;
-	font-size: px-to-rem(18);
-	line-height: 1.5;
+    font-style: normal;
+    font-weight: 700;
+    font-size: px-to-rem(18);
+    line-height: 1.5;
 
-	@media only screen and (min-width: $phone) {
-		font-size: px-to-rem(20);
-	}
+    @media only screen and (min-width: $phone) {
+        font-size: px-to-rem(20);
+    }
 }
 
 h6 {
-	font-style: normal;
-	font-weight: 700;
-	font-size: px-to-rem(14);
-	line-height: 1.5;
+    font-style: normal;
+    font-weight: 700;
+    font-size: px-to-rem(14);
+    line-height: 1.5;
 
-	@media only screen and (min-width: $phone) {
-		font-size: px-to-rem(16);
-	}
+    @media only screen and (min-width: $phone) {
+        font-size: px-to-rem(16);
+    }
 }
 
 ol,
 ul,
 p {
-	cursor: default;
-	font-family: $theme__primary-font--poppins;
-	font-weight: 300;
-	font-size: px-to-rem(14);
-	line-height: 1.33;
-	margin-bottom: 20px;
-	color: $black;
+    cursor: default;
+    font-family: $theme__primary-font;
+    font-weight: 300;
+    font-size: px-to-rem(14);
+    line-height: 1.33;
+    margin-bottom: 20px;
+    color: $black;
 
-	@media only screen and (min-width: $phone) {
-		font-size: px-to-rem(18);
-	}
+    @media only screen and (min-width: $phone) {
+        font-size: px-to-rem(18);
+    }
 }
 
 ol,
 ul {
-	margin-left: px-to-rem(20);
+    margin-#{$app-left}: px-to-rem(20);
 }
 
 p {
-	strong {
-		color: $theme__text-description;
-		font-weight: 700;
-	}
+    strong {
+        color: $theme__text-description;
+        font-weight: 700;
+    }
 }
 
 a {
-	text-decoration: none !important;
-	color: $theme__text-description;
+    text-decoration: none !important;
+    color: $theme__text-description;
 
-	&:visited {
-		color: inherit;
-	}
+    &:visited {
+        color: inherit;
+    }
 
-	&:hover,
-	&:focus,
-	&:active {
-		color: $theme__text-title;
-	}
+    &:hover,
+    &:focus,
+    &:active {
+        color: $theme__text-title;
+    }
 }
 
 small {
-	font-family: $theme__primary-font--poppins;
-	font-style: normal;
-	font-weight: 400;
-	font-size: px-to-rem(10);
-	line-height: 2;
+    font-family: $theme__primary-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: px-to-rem(10);
+    line-height: 2;
 
-	@media only screen and (min-width: $phone) {
-		font-size: px-to-rem(14);
-	}
+    @media only screen and (min-width: $phone) {
+        font-size: px-to-rem(14);
+    }
 }
 
 .underline {
-	border-bottom: 2px solid $theme__text-description;
+    border-bottom: 2px solid $theme__text-description;
 }
 
 span.bold-700 {
-	font-weight: 700;
+    font-weight: 700;
 }
 
 blockquote {
-	padding: 10px;
-	margin-bottom: 10px;
-	background-color: $lightestBlue;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: $lightestBlue;
 }
 
 /*  =====================================
     Helping Classes for fonts
 =====================================   */
 @include config-text-colors(
-	"text-",
-	"white" $theme__color--light,
-	"blue" $blue,
-	"liBlue" $lightBlue,
-	"green" $turtleGreen,
-	"purple" $purple,
-	"voilet" $voilet,
-	"orange" $orange,
-	"yellow" $yellow,
-	"yellow2" $yellow2,
-	"mustard" $mustard,
-	"grape" $grapePurple,
-	"melon" $melon,
-	"paleGrey" $paleGrey,
-	"azure" $azure,
-	"grape-red" $grapeRed
+    "text-",
+    "white" $theme__color--light,
+    "blue" $blue,
+    "liBlue" $lightBlue,
+    "green" $turtleGreen,
+    "purple" $purple,
+    "voilet" $voilet,
+    "orange" $orange,
+    "yellow" $yellow,
+    "yellow2" $yellow2,
+    "mustard" $mustard,
+    "grape" $grapePurple,
+    "melon" $melon,
+    "paleGrey" $paleGrey,
+    "azure" $azure,
+    "grape-red" $grapeRed
 );
 
 .font-light {
-	font-family: $theme__primary-font--poppins;
-	font-weight: 100;
+    font-family: $theme__primary-font;
+    font-weight: 100;
 }
 
 //Helping Classes for fonts Ends
@@ -262,19 +262,19 @@ blockquote {
     Helping Classes For round image
 =====================================   */
 .img-circle {
-	width: 4rem;
-	height: 4rem;
-	border-radius: 50%;
-	margin: 0 auto;
-	padding: 0;
-	line-height: 4rem;
-	color: $theme__color--light;
-	font-size: 16px;
-	overflow: hidden;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 4rem;
+    color: $theme__color--light;
+    font-size: 16px;
+    overflow: hidden;
 }
 
 .img-fluid {
-	width: 100%;
+    width: 100%;
 }
 
 //Helping Classes For round image ends
@@ -283,92 +283,74 @@ blockquote {
     Button Configuration
 =====================================   */
 .close-btn:hover {
-	@include box-shadow(0 5px 10px 0 rgba(0, 0, 0, 0.35));
-	//@include transform(rotate(90deg));
+    @include box-shadow(0 5px 10px 0 rgba(0, 0, 0, 0.35));
+    //@include transform(rotate(90deg));
 }
 
 //Button Configuration Ends
 
 /*  =====================================
-    Form Elements
-=====================================   */
-input {
-	font-family: $theme__primary-font--poppins;
-	font-style: normal;
-	font-weight: 400;
-	font-size: px-to-rem(18);
-	line-height: 1.25;
-	color: $theme__primary-color--green-base;
-
-	&::placeholder {
-		color: $theme__bg--base;
-	}
-}
-
-// Form Elements Ends
-
-/*  =====================================
     Swiper (Carousel) Configuration
 =====================================   */
 .swiper {
-	&-container {
-		width: 100%;
-		height: 400px;
-		background-position: right center;
-		background-repeat: no-repeat;
-		background-size: 80%;
+    &-container {
+        width: 100%;
+        height: 400px;
+        background-position: $app-right center;
+        background-repeat: no-repeat;
+        background-size: 80%;
 
-		@media screen and (min-width: $tablet) {
-			height: 700px;
-			background-position: 85% 50%;
-			background-size: contain;
-		}
-	}
-	&-slide {
-		/* Center slide text vertically */
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		-webkit-justify-content: center;
-		justify-content: center;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		-webkit-align-items: center;
-		align-items: center;
-	}
-	&-button-next,
-	&-button-prev {
-		color: $grey2;
-		visibility: visible;
-		&::after {
-			font-size: 2rem;
-			color: $theme__primary-color--green-base;
-		}
-	}
-	&-pagination-bullet {
-		background-color: $theme__primary-color--green-base !important;
-		height: px-to-rem(13) !important;
-		width: px-to-rem(13) !important;
+        @media screen and (min-width: $tablet) {
+            height: 700px;
+            background-position: 85% 50%;
+            background-size: contain;
+        }
+    }
+    &-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    &-button-next,
+    &-button-prev {
+        color: $grey2;
+        visibility: visible;
+        &::after {
+            font-size: 2rem;
+            color: $theme__primary-color--green-base;
+        }
+    }
+    &-pagination-bullet {
+        background-color: $theme__primary-color--green-base !important;
+        height: px-to-rem(13) !important;
+        width: px-to-rem(13) !important;
 
-		@media screen and (min-width: $tablet) {
-			height: px-to-rem(17) !important;
-			width: px-to-rem(17) !important;
-		}
-	}
-	&-button-disabled {
-		opacity: 0;
-		visibility: hidden;
-	}
+        @media screen and (min-width: $tablet) {
+            height: px-to-rem(17) !important;
+            width: px-to-rem(17) !important;
+        }
+    }
+    &-button-disabled {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 //Swiper (Carousel) Configurations Ends
 
 article.page {
-	margin-bottom: px-to-rem(50);
+    margin-bottom: px-to-rem(50);
 
-	a {
-		text-decoration: underline !important;
-	}
+    a {
+        text-decoration: underline !important;
+    }
 }

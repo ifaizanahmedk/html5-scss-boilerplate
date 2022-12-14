@@ -2,143 +2,143 @@
     Buttons Configuration
 =====================================   */
 [class*="btn-"] {
-	position: relative;
-	text-transform: none;
-	padding: px-to-rem(13) px-to-rem(30);
-	font-size: px-to-rem(14);
-	line-height: 1.5;
-	font-weight: 600;
-	color: $theme__color--light;
-	font-family: $theme__primary-font--poppins;
-	background-color: $theme__primary-color--green-base;
-	border: 1px solid;
-	float: none;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 25px;
-	@include transition(200ms ease-in-out);
-	cursor: pointer;
+    position: relative;
+    text-transform: none;
+    padding: px-to-rem(13) px-to-rem(30);
+    font-size: px-to-rem(14);
+    line-height: 1.5;
+    font-weight: 600;
+    color: $theme__color--light;
+    font-family: $theme__primary-font;
+    background-color: $theme__primary-color--green-base;
+    border: 1px solid;
+    float: none;
+    -webkit-border-radius: px-to-rem(8);
+    -moz-border-radius: px-to-rem(8);
+    border-radius: px-to-rem(8);
+    @include transition(200ms ease-in-out);
+    cursor: pointer;
 
-	@media screen and (min-width: $tablet) {
-		font-size: px-to-rem(18);
-	}
+    @media screen and (min-width: $tablet) {
+        font-size: px-to-rem(18);
+    }
 
-	&:focus {
-		outline: none;
-		outline-color: transparent;
-		box-shadow: none;
-	}
+    &:focus {
+        outline: none;
+        outline-color: transparent;
+        box-shadow: none;
+    }
 
-	&:visited {
-		color: initial;
-		outline-color: transparent;
-		box-shadow: none;
-	}
+    &:visited {
+        color: initial;
+        outline-color: transparent;
+        box-shadow: none;
+    }
 
-	&:hover {
-		outline: none;
-		outline-color: transparent;
-		box-shadow: none;
-		background-color: $theme__primary-color--green-highlighted;
-		color: $white;
-	}
+    &:hover {
+        outline: none;
+        outline-color: transparent;
+        box-shadow: none;
+        background-color: $theme__primary-color--green-highlighted;
+        color: $white;
+    }
 
-	&:active {
-		border: 0;
-		outline: 0;
-		outline-color: transparent;
-		box-shadow: none;
-	}
+    &:active {
+        border: 0;
+        outline: 0;
+        outline-color: transparent;
+        box-shadow: none;
+    }
 }
 
 [class*="btn-secondary"] {
-	background-color: transparent;
-	border: 1px solid $theme__primary-color--green-highlighted;
-	color: $theme__primary-color--green-highlighted;
+    background-color: transparent;
+    border: 1px solid $theme__primary-color--green-highlighted;
+    color: $theme__primary-color--green-highlighted;
 
-	&:hover {
-		outline: none;
-		outline-color: transparent;
-		box-shadow: none;
-		background-color: $theme__primary-color--green-highlighted;
-		color: $theme__color--light;
-	}
+    &:hover {
+        outline: none;
+        outline-color: transparent;
+        box-shadow: none;
+        background-color: $theme__primary-color--green-highlighted;
+        color: $theme__color--light;
+    }
 }
 
 [class*="btn-outline"] {
-	background-color: transparent;
-	font-size: 15px;
-	padding: 10px 20px 8px;
-	color: $theme__color--dark;
-	margin: 6.35rem auto 0;
-	display: table;
-	border: 1px solid $theme__color--dark;
-	font-family: $theme__primary-font--poppins;
-	font-weight: 300;
-	text-transform: uppercase;
-	letter-spacing: 0.8px;
+    background-color: transparent;
+    font-size: 15px;
+    padding: 10px 20px 8px;
+    color: $theme__color--dark;
+    margin: 6.35rem auto 0;
+    display: table;
+    border: 1px solid $theme__color--dark;
+    font-family: $theme__primary-font;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 [class*="btn-close"] {
-	content: "";
-	width: 3.5rem;
-	height: 3.5rem;
-	position: absolute;
-	top: -4.5rem;
-	right: 0;
-	color: $theme__color--light;
-	border-radius: 50%;
-	background-color: $green;
-	background-origin: content-box;
-	background-repeat: no-repeat;
-	background-position: center;
-	//background-image: url('../img/close.png');
-	background-size: contain;
-	display: block;
-	z-index: 5;
-	margin: 0.5rem 1rem;
-	padding: 0;
-	cursor: pointer;
-	@include transition(all 0.3s ease-in-out);
+    content: "";
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    top: -4.5rem;
+    #{app-right}: 0;
+    color: $theme__color--light;
+    border-radius: 50%;
+    background-color: $green;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    //background-image: url('../img/close.png');
+    background-size: contain;
+    display: block;
+    z-index: 5;
+    margin: 0.5rem 1rem;
+    padding: 0;
+    cursor: pointer;
+    @include transition(all 0.3s ease-in-out);
 }
 
 [class*="btn-tertiary"] {
-	background-color: transparent;
-	border: 0;
-	color: $theme__primary-color--green-highlighted;
+    background-color: transparent;
+    border: 0;
+    color: $theme__primary-color--green-highlighted;
 
-	&:hover {
-		outline: none;
-		outline-color: transparent;
-		box-shadow: none;
-		background-color: transparent;
-		color: $theme__primary-color--green-base;
-	}
+    &:hover {
+        outline: none;
+        outline-color: transparent;
+        box-shadow: none;
+        background-color: transparent;
+        color: $theme__primary-color--green-base;
+    }
 }
 
 @include config-button-bgcolors(
-	"btn-",
-	"white" $theme__color--light $theme__color--dark,
-	"transparent" transparent $theme__color--dark,
-	"blue" $blue $theme__color--light,
-	"green" $green $theme__color--light,
-	"green--olive" $green2 $theme__color--light,
-	"black" $theme__color--dark4 $theme__color--light,
-	"grey" transparent $theme__color--light
+    "btn-",
+    "white" $theme__color--light $theme__color--dark,
+    "transparent" transparent $theme__color--dark,
+    "blue" $blue $theme__color--light,
+    "green" $green $theme__color--light,
+    "green--olive" $green2 $theme__color--light,
+    "black" $theme__color--dark4 $theme__color--light,
+    "grey" transparent $theme__color--light
 );
 
 //button styling apply not to
 .btn-group,
 .btn-link {
-	padding: 0;
-	border: 0;
+    padding: 0;
+    border: 0;
 
-	&:hover {
-		@include box-shadow(inherit);
-		background-color: inherit;
-		color: inherit;
-		border: 0;
-	}
+    &:hover {
+        @include box-shadow(inherit);
+        background-color: inherit;
+        color: inherit;
+        border: 0;
+    }
 }
 
 //Buttons Configuration Ends
